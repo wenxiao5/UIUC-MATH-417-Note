@@ -97,7 +97,7 @@ The $c$ is unique, we write it $gcd(a,b)$.
 \end{proposition}
 
 \begin{example}[Exercise 1.4.3]
-    For the pair $(a,b) = (130, 95)$, find $gcd(a, b)$ using the \textit{Euclidean Algorithm} and express it in the form $gcd(a,b) = sa + tb$ for $s, t \in Z$.
+    For the pair $(a,b) = (130, 95)$, find $gcd(a, b)$ using the \textit{Euclidean Algorithm} and express it in the form $gcd(a,b) = m_0a + n_0b$ for $m_0, n_0 \in Z$.
 \end{example}
 \begin{equation}
     \begin{aligned}
@@ -124,16 +124,6 @@ The $c$ is unique, we write it $gcd(a,b)$.
     \end{aligned}
     \nonumber
 \end{equation}
-We can also express it by matrix
-\begin{center}
-    \begin{tabular}{ccccc}
-            \hline
-            & $q$& $r$&$s$&$t$\\
-            \hline
-            -1& & 130&1&0\\
-            \hline
-    \end{tabular}
-    \end{center}
 
 \subsection{Proposition: $gcd(a,b)$ exists and is the smallest positive integer in the set $M=\{ma+nb|m,n\in\mathbb{Z}\}$}
 
@@ -233,14 +223,6 @@ $a=p_1^{k_1}\cdot p_2^{k_2}\cdot...p_n^{k_n}$ where $p_i > 1$ is prime, $k_i\in\
         We can also know $n_1=r_1$, otherwise we would have two prime factorization of the quotient where the largest primes are different by dividing $p_1^{\min\{n_1,r_1\}}$.
         
         Then we can get $b=p_2^{n_2}\cdot...p_k^{n_k}=q_2^{r_2}\cdot...q_j^{r_j}$. Then prove it by induction.
-
-        \item Method 2:
-        
-        Suppose $a=p_1\cdot p_2\cdot...p_k=q_1\cdot q_2\cdot...q_t$. For a $p_i$, there must exist a $q_j$ s.t. $p_i=q_j$:
-
-        Assume that $p_i\neq q_t$, $gcd(p_i,q_t)=1$. Then $\exists a,b$ such that $1=ap_i+bq_t$. Multiplying both sides by $q_1\cdot q_2\cdot...q_{t-1}$: $$q_1\cdot q_2\cdot...q_{t-1}=ap_iq_1\cdot q_2\cdot...q_{t-1}+bq_1\cdot q_2\cdot...q_t$$
-        Since $p_i|q_1\cdot q_2\cdot...q_t$, we can conclude that $p_i|(ap_iq_1\cdot q_2\cdot...q_{t-1}+bq_1\cdot q_2\cdot...q_t)$ $$\text{i.e. } p_i|q_1\cdot q_2\cdot...q_{t-1}\text{ if }p_i\neq q_t$$
-        Then prove by induction.
     \end{enumerate}
 \end{enumerate}
 
