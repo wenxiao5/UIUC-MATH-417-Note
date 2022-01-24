@@ -245,63 +245,41 @@ $a=p_1^{k_1}\cdot p_2^{k_2}\cdot...p_n^{k_n}$ where $p_i > 1$ is prime, $k_i\in\
         Then prove by induction.
     \end{enumerate}
 \end{enumerate}
+
+Existence: (Previous Lemma)
+
+Uniqueness: $a=p_1^{n_1}\cdot p_2^{n_2}\cdot...p_k^{n_k}=q_1^{r_1}\cdot q_2^{r_2}\cdot...q_j^{r_j}$. Where $p_1>p_2>...>p_k, q_1>q_2>...>q_j, n_i,r_i\geq 1$.
+
+$p_1|a\Rightarrow \exists\ q_i\ s.t.\ p_1|q_i$. Similarly, $\exists\ q_i\ s.t.\ q_1|p_{i'}$.
+
+$q_1\leq p_{i'}\leq p_1\leq q_i\Rightarrow q_1= p_{i'}= p_1= q_i$
+
+We can also know $n_1=r_1$, otherwise we would have two prime factorization of the quotient where the largest primes are different by dividing $p_1^{\min\{n_1,r_1\}}$.
+
+Then we can get $b=p_2^{n_2}\cdot...p_k^{n_k}=q_2^{r_2}\cdot...q_j^{r_j}$. Then prove it by induction.
 \end{proof}
 
 \section{Modular arithmetic}
 \subsection{Congruences}
-\subsubsection{Congruent modulo $m$: $a\equiv b \text{ mod }m$}
-Given $m\in\mathbb{Z}_+$, define a relation on $\mathbb{Z}$: \underline{\textbf{congruence modulo $m$}}
+\subsubsection{congruent modulo $m$}
+Given $n\in\mathbb{Z}_+$, define a relation on $\mathbb{Z}$: \underline{\textbf{congruence modulo $m$}}
 \begin{equation}
     \begin{aligned}
-        a\equiv b \text{ mod }m\text{, if } m|(a-b)
+        a\equiv b \textit{ mod }m\textit{, if } n|(a-b)
     \end{aligned}
     \nonumber
 \end{equation}
-Read as "$a$ is congruent to $b$ mod $n$"; Notation: $a\equiv b$ mod $m$.
-
-Equivalent to: $a,b$ have the same remainder after division by $m$.
-\subsubsection{Proposition: For fixed $m\geq 2$, the relation "$a\sim b$ $\Leftrightarrow$ $a\equiv b$ mod $m$" is an \underline{equivalence relation}}
+read"$a$ is congruent to $b$ mod $n$".
+\subsubsection{Proposition 1.5.1: Congruence modulo $n$ is an \underline{equivalence relation}}
 \begin{proposition}[Proposition 1.5.1]
-    For fixed $m\geq 2$, the relation "$a\sim b$ $\Leftrightarrow$ $a\equiv b$ mod $m$" is an \underline{equivalence relation}
+    Congruence modulo $n$ is an equivalence relation $\forall n\in\mathbb{Z}_+$
 \end{proposition}
 \begin{proof}
-\quad
-
-\begin{enumerate}[1)]
-    \item \underline{Reflexive}: $\forall a\in\mathbb{Z}, m|0=(a-a)$, so $a\equiv a \text{ mod }m$ i.e. $a\sim a$.
-    \item \underline{Symmetric}: $\forall a,b\in\mathbb{Z}$, $a\equiv b \text{ mod }m$, then $m|(a-b)\Rightarrow m|(b-a)$$\Rightarrow b\equiv a \text{ mod }m$. i.e. $a\sim b \Rightarrow b\sim a$.
-    \item \underline{Transitive}: $\forall a,b,c\in\mathbb{Z}$, $a\equiv b \text{ mod }m$, $b\equiv c \text{ mod }m$. Then $m|(a-b), m|(b-c)$ $\Rightarrow m|(a-b)+(b-c)=(a-c)\Rightarrow a\equiv c \text{ mod }m$.
-\end{enumerate}
+\quad\\
+1. \underline{Reflexive}: $\forall a\in\mathbb{Z}, n|0=(a-a)$, so $a\equiv a \textit{ mod }n$.\\
+2. \underline{Symmetric}: $\forall a,b\in\mathbb{Z}$, $a\equiv b \textit{ mod }n$, so $n|(a-b)$ i.e. $a-b=kn$ for some $k\in\mathbb{Z}$ $\Rightarrow b-a=-kn\Rightarrow n|(b-a)\Rightarrow b\equiv a \textit{ mod }n$.\\
+2. \underline{Transitive}: $\forall a,b,c\in\mathbb{Z}$, $a\equiv b \textit{ mod }n$, $b\equiv c \textit{ mod }n$. So, $n|(a-b), n|(b-c)$$n|(a-b)+(b-c)=(a-c)\Rightarrow a\equiv c \textit{ mod }n$.
 \end{proof}
-
-\subsubsection{Theorem: the equivalence relation "$a\sim b$ $\Leftrightarrow$ $a\equiv b$ mod $m$" partitions the integers into $m$ disjoint sets $\Omega_i=\{a|a\sim i\},i=0,1,...,m-1$}
-\begin{theorem}
-    the equivalence relation "$a\sim b$ $\Leftrightarrow$ $a\equiv b$ mod $m$" partitions the integers into $m$ disjoint sets $\Omega_i=\{a|a\sim i\},i=0,1,...,m-1$
-\end{theorem}
-\begin{proof}
-    Prove any $a\in \mathbb{Z}$ belongs to a unique $\Omega_i$.
-
-    \begin{enumerate}[a)]
-        \item Existence: Division Algorithm $\Rightarrow$ $a=qm+r$, $0\leq r<m$. $a\in\Omega_r$.
-        \item Uniqueness: Assume $a$ in two sets, $a\in\Omega_r\cap \Omega_{r^1}$, $0\leq r^1<r<m$.
-        
-        Then $m|a-r$ and $m|a-r^1$ $\Rightarrow$ $m|r-r^1$, which is impossible because $0<r-r^1<m$. Contradiction.
-    \end{enumerate}
-\end{proof}
-
-\subsubsection{Proposition: Addition and Mutiplication of Congruences}
-\begin{proposition}
-    Fix integer $m\geq 2$. If $a\equiv r \text{ mod }m$ and $b\equiv s \text{ mod }m$, then $a+b\equiv r+s \text{ mod }m$ and $ab\equiv rs \text{ mod }m$
-\end{proposition}
-\begin{proof}
-\quad
-
-\begin{enumerate}[a)]
-    \item Addition: $m|(a-r), m|(b-s)\Rightarrow m|(a-c)+(b-d)\Rightarrow m|(a+b)-(c-d)$.
-    \item Mutiplication: $a=r+km, k\in\mathbb{Z}; b=s+jm, j\in\mathbb{Z}$. $ab=rs+rjm+skm+kjm^2\Rightarrow n|(ab-rs)$.
-\end{enumerate}
-\end{proof}
-
 
 \subsection{Congruence Classes: $[a]_n=\{a+kn|k\in\mathbb{Z} \}$}
 将给定$n$，相同余数的数分为一组\\
@@ -330,6 +308,15 @@ For any $a\in\mathbb{Z}$. By Euclidean algorithm, $a=qn+r$, $q,r\in\mathbb{Z}$, 
 When $0\leq a<b\leq n-1$, $n\nmid(b-a)$, so $[a]\neq [b]$ the $n$ congruence classes listed are all distinct. Hence, there are exactly $n$ congruence classes.
 \end{proof}
 \subsubsection{Proposition 1.5.5: Addition and Multiplication on Congruence Classes}
+\begin{lemma}[Lemma 1.5.3]
+    $\forall a,b,c,d,n\in\mathbb{Z}, n>1$, $a\equiv c \textit{ mod }n$, $b\equiv d \textit{ mod }n$. Then
+    $a+b\equiv c+d \textit{ mod }n$, $ab\equiv cd \textit{ mod }n$
+\end{lemma}
+\begin{proof}
+\quad\\
+$n|(a-c), n|(b-d)\Rightarrow n|(a-c)+(b-d)=(a+b)-(c-d)$\\
+$a=c+kn, k\in\mathbb{Z}; b=d+jn, j\in\mathbb{Z}$. $ab=cd+cjn+dkn+kjn^2\Rightarrow n|(ab-cd)$.
+\end{proof}
 Fix $n\in\mathbb{Z}$, we define addition$+$ and multiplication$\cdot$ on $\mathbb{Z}_n$:
 \begin{equation}
     \begin{aligned}
