@@ -12,7 +12,6 @@
 \usepackage{amsthm}
 \usepackage{indentfirst}
 \usepackage{amssymb}
-\usepackage{enumerate}
 \setlength{\parindent}{0pt}
 \usetikzlibrary{shapes,snakes}
 \newcommand{\argmax}{\operatornamewithlimits{argmax}}
@@ -22,7 +21,6 @@
 \usepackage{booktabs}
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}{Proposition}
-\newtheorem{definition}{Definition}
 \newtheorem{lemma}{Lemma}
 \newtheorem{example}{Example}
 \newtheorem{corollary}{Corollary}
@@ -116,25 +114,16 @@ A function $\sigma:A \rightarrow B$ is called,\\
 Such $\tau$ is unique, called inverse of $\sigma$, $\tau=\sigma^{-1}$.
 
 \subsection{Set}
-\subsubsection{Well Defined Set}
-\begin{definition}
-    A set $S$ is \textbf{well defined} if an object $a$ is either $a\in S$ or $a\notin S$.
-\end{definition}
-\subsubsection{Power Set}
-\begin{definition}
-    For any set $A$, we denote by $\mathcal{P}(A)$ the collection of all subsets of $A$. $\mathcal{P}(A)$ is the \textbf{power set} of $A$.
-\end{definition}
 \subsubsection{Cardinalities of Sets, Pigeonhole Principle}
-\begin{definition}
-    If $A$ is a set, $|A|=$ cardinality of $A$ = $\#$ of elements
-\end{definition}
-$n \in \mathbb{N},|\{1, \ldots n\}|=n$; $|\emptyset|=0(\emptyset=\text { empty set })$.
-
-$|A|=|B|$ if there is a bijection $\sigma:A \rightarrow B$.
-
-If there is an \textit{injection} $\sigma:A \rightarrow B$, we can write $|A|\leq|B|$;
-
-If there is a \textit{surjection} $\sigma:A \rightarrow B$, we can write $|A|\geq|B|$.
+\begin{equation}
+    \begin{aligned}
+        &\text { If } A \text { is a set, }|A|=\text { cardinality of } A=\# \text { of elements }\\
+        &n \in \mathbb{N},|\{1, \ldots n\}|=n\\
+        &|\emptyset|=0(\emptyset=\text { empty set })
+        \end{aligned}
+        \nonumber
+\end{equation}
+$|A|=|B|$ if there is a bijection $\sigma:A \rightarrow B$. \\If there is an \textit{injection} $\sigma:A \rightarrow B$, we can write $|A|\leq|B|$; \\If there is a \textit{surjection} $\sigma:A \rightarrow B$, we can write $|A|\geq|B|$.
 \begin{theorem}[Pigeonhole Principle]
     If $A$ and $B$ are sets and $|A|>|B|$, then there is no injective function $\sigma:A \rightarrow B$.
 \end{theorem}
