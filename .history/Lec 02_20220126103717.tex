@@ -308,34 +308,17 @@ Equivalent to: $a,b$ have the same remainder after division by $m$.
 If $gcd(a,m)=1$, then $\forall b\in \mathbb{Z}$ the congruence $aX\equiv b \text{ mod }m$ has a unique solution.
 \end{theorem}
 \begin{proof}
-\quad
-
-\begin{enumerate}[1)]
-    \item Existence: Since $gcd(a,m)=1$, $\exists s,t$ such that
-    \begin{equation}
-        \begin{aligned}
-        1&=sa+tm\\
-        (\text{Version 1})&\\
-        &\text{(Mutiplying $X$)}\\
-        X&=saX+tmX\\
-        aX\equiv b \text{ mod }m &\Leftrightarrow aX=km+b\\
-        &\Leftrightarrow X\equiv sb \text{ mod }m\\
-        (\text{Version 2})&\\
-        &\text{(Mutiplying $s$)}\\
-        saX&\equiv sb \text{ mod }m\\
-        (1-tm)X&\equiv sb \text{ mod }m\\
-        X&\equiv sb \text{ mod }m\\
-        \end{aligned}
-        \nonumber
-    \end{equation}
-    $X\equiv sb \text{ mod }m$ is the solution to $aX\equiv b \text{ mod }m$.
-    \item Uniqueness: Assume $x,y$ are two solutions, $$ax\equiv b \text{ mod },ay\equiv b \text{ mod } m\Rightarrow	a(x-y)\equiv 0 \text{ mod }m$$
-    Since $gcd(a,m)=1,\ m|(x-y)\Rightarrow x=y,\ (x,y\in\{0,1,...,m-1\})$
-\end{enumerate}
-\begin{example}
-Solve $3X\equiv 5 \text{ mod }11$.
-\end{example}
-$gcd(3,11)=1$, $1=4*3-1*11$, $$X\equiv 9$$
+Since $gcd(a,m)=1$, $\exists s,t$ such that
+\begin{equation}
+    \begin{aligned}
+    1&=sa+tm\\
+    &\text{(Mutiplying $X$)}\\
+    X&=saX+tmX\\
+    aX\equiv b \text{ mod }m &\Leftrightarrow aX=km+b\\
+    &\Leftrightarrow X\equiv sb \text{ mod }m
+    \end{aligned}
+    \nonumber
+\end{equation}
 
 \end{proof}
 
