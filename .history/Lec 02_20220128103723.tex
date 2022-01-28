@@ -341,25 +341,9 @@ $gcd(3,11)=1$, $1=4*3-1*11$, $$X\equiv 9$$
 
 \subsection{Chinese Remaindar Theorem (CRT): unique solution for $x$ modulo $mn$}
 \begin{theorem}[Chinese Remaindar Theorem (CRT)]
-\quad
 
-If $gcd(m,n)=1$. Then $\left\{\begin{matrix}
-    x\equiv r \text{ mod }m& (1)\\
-    x\equiv s \text{ mod }n& (2)
-\end{matrix}\right.$ have a unique solution for $x$ modulo $mn$.
 \end{theorem}
-\begin{proof}
-\quad\\
-(1) $\Rightarrow x=km+r$ for some $k\in \mathbb{Z}$.
 
-\begin{equation}
-    \begin{aligned}
-        \text{substitute (2) }&\Rightarrow	km+r\equiv s \text{ mod }n\\ &\Leftrightarrow	mk\equiv s-r \text{ mod }n\quad (3)
-    \end{aligned}
-    \nonumber
-\end{equation}
-According to previous theorem, $gcd(m,n)=1$, (3) has a \textbf{unique} solution. We say $k\equiv t \text{ mod }n$, $k=ln+t$ for some $n\in \mathbb{Z}$ $\Rightarrow	x=(ln+t)m+r=lnm+tm+r$, where $tm+r$ is the unique solution to $x$ modulo $mn$.
-\end{proof}
 
 
 \subsection{Congruence Classes: $[a]_n=\{a+kn|k\in\mathbb{Z} \}$}
