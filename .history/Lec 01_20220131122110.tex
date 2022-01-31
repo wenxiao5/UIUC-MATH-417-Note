@@ -557,7 +557,7 @@ Although the product of transposition of a permutation is not unique, the \under
 
 What happens to a permutation $\sigma$'s cycles if $\sigma \rightarrow (i\ j)\circ\sigma$?
 
-1. $i$ and $j$ are not contained in $\sigma$.
+1. Don't affect the cycles if $i,j$ are not affected.
 
 2. $i$ and $j$ appear in the same cycle of $\sigma$.
 
@@ -565,31 +565,11 @@ What happens to a permutation $\sigma$'s cycles if $\sigma \rightarrow (i\ j)\ci
 
 \begin{equation}
     \begin{aligned}
-        (i\ j)\circ (i-- j\sim\sim)&=(i--)\circ(j\sim\sim)\\
-        (i\ j)\circ(i--)\circ(j\sim\sim)&=(i-- j\sim\sim)
+        (i\ j)\circ (i-- j\sim\sim)=(i--)\circ(j\sim\sim)
+        (i-- j\sim\sim)=(i\ j)\circ(i--)\circ(j\sim\sim)
     \end{aligned}
     \nonumber
 \end{equation}
-\begin{proposition}
-    $sign((i\ j)\circ\sigma)=-1\cdot sign(\sigma)$
-\end{proposition}
-\begin{proof}
-\quad\\
-
-Suppose $\sigma=(a_1\ a_2\ \cdots a_k\ \sigma_1\ \sigma_2\ \cdots \sigma_l)$
-
-Then $(a_1\ b_1)\circ\sigma=(a_1\ a_2\ \cdots a_k)(\sigma_1\ \sigma_2\ \cdots \sigma_l)$
-$$sign(\sigma)=\left\{\begin{matrix}
-    +1&\text{ if $k+l$ is odd}\\
-    -1&\text{ if $k+l$ is even}
-\end{matrix}\right.$$
-$$sign((a_1\ b_1)\circ\sigma)=\left\{\begin{matrix}
-    -1&\text{ if $k+l$ is odd}\\
-    +1&\text{ if $k+l$ is even}
-\end{matrix}\right.$$
-
-\end{proof}
-
 
 \begin{thebibliography}{1}      \bibitem{Long2015Fully}  Christopher J Leininger  \newblock Introduction to Abstract Algebra
     (Draft)  2017.
