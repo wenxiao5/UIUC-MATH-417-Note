@@ -27,7 +27,6 @@
 \newtheorem{example}{Example}
 \newtheorem{corollary}{Corollary}
 \newtheorem{note}{Note}
-\newtheorem{claim}{Claim}
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{hyperref}
@@ -177,33 +176,15 @@ If $A,B$ are sets, then $B^A=\{\sigma:A \rightarrow B| \sigma \textit{ a functio
     \end{equation}
 \end{example}
 
-\subsubsection{Operation definitions}
-\begin{definition}
-    A \underline{binary operation} on a set $A$ is a function $*:A\times A \rightarrow A$.\\
-    The \underline{operation is \textit{associative}} if $a*(b*c)=(a*b)*c, \forall a,b,c\in A$.\\
-    The \underline{operation is \textit{commutative}} if $a*b=b*a, \forall a,b\in A$.
-\end{definition}
+\subsubsection{Binary operations on a Set, associative, commutative}
+A \underline{binary operation} on a set $A$ is a function $*:A\times A \rightarrow A$.\\
+The \underline{operation is \textit{associative}} if $a*(b*c)=(a*b)*c, \forall a,b,c\in A$.\\
+The \underline{operation is \textit{commutative}} if $a*b=b*a, \forall a,b\in A$.
 
 \begin{example}
 
 ${+,\circ}$ are both \textit{associative} and \textit{commutative} operations on $\mathbb{Z},\mathbb{N},\mathbb{Q},\mathbb{R}$; $-$ is a neither \textit{associative} nor \textit{commutative} operation on $\mathbb{Z},\mathbb{Q},\mathbb{R}$, but not $\mathbb{N}$.
 \end{example}
-
-\begin{definition}
-A subset $H\subset S$ is \underline{closed under $*$} if $a*b\in H$ for all $a,b\in H$.
-\end{definition}
-
-\begin{definition}
-$*$ has \underline{identity element $e\in S$} if $a*e=e*a=a$ for all $s\in S$.
-\end{definition}
-
-
-
-
-
-
-
-
 
 \section{Equivalence relations and Partition}
 \subsection{Equivalence relations（理性等价的定义）}
@@ -562,11 +543,6 @@ A \textbf{transposition} is a cycle of length 2: $\sigma=(i\ j)$.
     \end{equation}
 \end{proof}
 
-\begin{claim}
-Cycle of length $k$ can be written as a product of $k-1$ transpositions.
-\end{claim}
-
-
 \subsubsection{Sign of Permutation}
 \begin{theorem}
 Although the product of transposition of a permutation is not unique, the \underline{parity (odd or even) of the number of transposition} in a product is unique. We call it the \textbf{sign} of permutation.
@@ -578,14 +554,6 @@ Although the product of transposition of a permutation is not unique, the \under
     \nonumber
 \end{equation}
 \end{theorem}
-
-\begin{example}
-\quad
-
-$\sigma_1=(1\ 4\ 7\ 9)(2\ 8)(6\ 10)$: $N=3+1+1=5$ is odd.
-
-$\sigma_2=(1\ 2\ 3\ 4\ 5)(6\ 7\ 8\ 9\ 10)$: $N=4+4=8$ is even
-\end{example}
 
 What happens to a permutation $\sigma$'s cycles if $\sigma \rightarrow (i\ j)\circ\sigma$?
 

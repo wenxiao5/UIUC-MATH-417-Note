@@ -319,7 +319,6 @@ If $gcd(a,m)=1$, then $\forall b\in \mathbb{Z}$ the congruence $aX\equiv b \text
         &\text{(Mutiplying $X$)}\\
         X&=saX+tmX\\
         aX\equiv b \text{ mod }m &\Leftrightarrow aX=km+b\\
-        &\Leftrightarrow X=s(km+b)+b\\
         &\Leftrightarrow X\equiv sb \text{ mod }m\\
         (\text{Version 2})&\\
         &\text{(Mutiplying $s$)}\\
@@ -336,14 +335,7 @@ If $gcd(a,m)=1$, then $\forall b\in \mathbb{Z}$ the congruence $aX\equiv b \text
 \begin{example}
 Solve $3X\equiv 5 \text{ mod }11$.
 \end{example}
-$gcd(3,11)=1$, $1=4*3-1*11$, 
-\begin{equation}
-    \begin{aligned}
-        X&\equiv 4*5\\
-        X&\equiv 9
-    \end{aligned}
-    \nonumber
-\end{equation}
+$gcd(3,11)=1$, $1=4*3-1*11$, $$X\equiv 9$$
 
 \end{proof}
 
@@ -366,29 +358,9 @@ If $gcd(m,n)=1$. Then $\left\{\begin{matrix}
     \end{aligned}
     \nonumber
 \end{equation}
-According to previous theorem, $gcd(m,n)=1$, (3) has a \textbf{unique} solution.
-
-We say $k\equiv t \text{ mod }n$, $k=ln+t$ for some $l\in \mathbb{Z}$
-
-$\Rightarrow x=(ln+t)m+r=lnm+tm+r$, where $tm+r$ is the unique solution to $x$ modulo $mn$.
+According to previous theorem, $gcd(m,n)=1$, (3) has a \textbf{unique} solution. We say $k\equiv t \text{ mod }n$, $k=ln+t$ for some $n\in \mathbb{Z}$ $\Rightarrow	x=(ln+t)m+r=lnm+tm+r$, where $tm+r$ is the unique solution to $x$ modulo $mn$.
 \end{proof}
 
-\begin{example}(Similar to CRT)
-Find the smallest integer $x$ such that $$x\equiv 1 \text{ mod }11\text{ and }x\equiv  9\text{ mod }13$$
-\end{example}
-$gcd(11,13)=1$ and $1=6*11-5*13$
-
-Write $x=11k+1$. Substitute in $x\equiv 9 \text{ mod }13$:
-\begin{equation}
-    \begin{aligned}
-        11k&\equiv 8 \text{ mod }13\\
-        6*11k&\equiv 6*8\equiv 9 \text{ mod }13\\
-        (1+5*13)k&\equiv 9 \text{ mod }13\\
-        k&\equiv 9 \text{ mod }13\\
-    \end{aligned}
-    \nonumber
-\end{equation}
-Then $x=11k+1=100$.
 
 \subsection{Congruence Classes: $[a]_n=\{a+kn|k\in\mathbb{Z} \}$}
 将给定$n$，相同余数的数分为一组\\
@@ -1099,15 +1071,10 @@ $Isom(\mathbb{R}^n)=\{\Phi_{A,v}|A\in O(n), v\in \mathbb{R}^n \}$
 
 
 \section{Group $(G, *)$: a set with a binary operation(associative, identity, inverse)}
-A \textit{group} is a nonempty set $G$ with a binary operation $*:G \times G \rightarrow G$ s.t.
-\begin{enumerate}[(1)]
-    \item $*$ is \textbf{associative}
-    \item $G$ contains an \textbf{identity} element $e$ for $*$: $\exists e\in G$ s.t. $e * g = g * e = g\ \forall g \in G$
-    \item Each element $a\in G$ has an \textbf{inverse} $b\in G$ s.t. $a*b=b*a=e$.
-
-A Group is \textbf{abelian} if moreover
-    \item $*$ is \textbf{commutative}.
-\end{enumerate}
+A \textit{group} is a nonempty set $G$ with a binary operation $*:G \times G \rightarrow G$ s.t. the following holds\\
+(1) $*$ is associative\\
+(2) $\exists e\in G$ an identity element $e * g = g * e = g\ \forall g \in G$\\
+(3) $\forall g \in G, \exists g^{-1} \in G$ s.t. $g * g^{-1} = g^{-1} * g = e$\\
 
 \subsection{$(Sym(X),\circ)$ symmetric/permutation group of $X$}
 \begin{example}
