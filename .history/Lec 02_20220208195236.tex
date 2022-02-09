@@ -1098,9 +1098,7 @@ $Isom(\mathbb{R}^n)=\{\Phi_{A,v}|A\in O(n), v\in \mathbb{R}^n \}$
 
 
 
-\section{Group}
-\subsection{Group $(G, *)$: a set with a binary operation(associative, identity, inverse)}
-\subsubsection{Definition}
+\section{Group $(G, *)$: a set with a binary operation(associative, identity, inverse)}
 A \textit{group} is a nonempty set $G$ with a binary operation $*:G \times G \rightarrow G$ s.t.
 \begin{enumerate}[(1)]
     \item $*$ is \textbf{associative}
@@ -1124,8 +1122,7 @@ As we know a $V$ is a vector space over $\mathbb{F}$ means $V$ is a field whose 
 
 
 
-
-\subsubsection{$(Sym(X),\circ)$ symmetric/permutation group of $X$}
+\subsection{$(Sym(X),\circ)$ symmetric/permutation group of $X$}
 \begin{example}
 If $X$ is any nonempty set, permutation group of $X: \{\sigma:X \rightarrow X| \sigma$ is a bijection\}, then
 \end{example}
@@ -1134,46 +1131,11 @@ If $X$ is any nonempty set, permutation group of $X: \{\sigma:X \rightarrow X| \
 3. $\sigma\in Sym(X), \sigma^{-1}\in Sym(X)$ is the inverse function.\\
 \textbf{$(Sym(X),\circ)$ is a group called the symmetric group of $X$}
 
-
-\subsubsection{Cancelation Laws}
-\begin{theorem}
-Let $G$ be a group. The left and right cancelation laws hold in $G$:
-\begin{enumerate}
-    \item $a*x=a*y \Rightarrow x=y$
-    \item $x*a=y*a \Rightarrow x=y$
-\end{enumerate}
-\end{theorem}
-\begin{proof}
-\quad\\
-Let $a*x=a*y$. $\exists a'$ s.t. $a'*a=e$. $a'*(a*x)=a'*(a*y) \Rightarrow (a'*a)*x=(a'*a)*y \Rightarrow	e*x=e*y \Rightarrow	x=y$
-
-Similar for the right cancel law.
-\end{proof}
-
-\subsubsection{Unique Solution of Linear Equation}
-\begin{theorem}
-The linear equation $a*x=b$ and $y*a=b$ has unique solution.
-\end{theorem}
-\begin{proof}
-\quad\\
-\begin{enumerate}
-    \item Existence: Multiply by $a'$: $a'*(a*x)=a'*b \Rightarrow x=a'*b$ is a solution.
-    \item Uniqueness: if $x'$ is another, $a*x=a*x'=b \Rightarrow x=x'$
-\end{enumerate}
-\end{proof}
-
-
-
 \subsection{$H$: Subgroup of $(G, *)$ ($H\neq\emptyset\subset G$ closed under $*$; inverse $g^{-1}\in H$), written as $H<G$}
 $H\neq\emptyset\subset G$ is a \textit{subgroup} of $(G, *)$ if,\\
 1. $\forall\ g,h\in H$, $g*h\in H$.\\
 2. $\forall\ g\in H$, $g^{-1}\in H$.\\
-write $H\leq G$, $H<G$ if $H$ is a subgroup of $(G, *)$. (If $H=G$, $H$ is an improper subgroup. If $H\subsetneq G$, $H$ is an proper subgroup.)
-
-If $H=\{e\}$, then $H$ is a trivial subgroup.
-
-If $H\neq\{e\}$, then $H$ is a nontrivial subgroup.
-
+write $H<G$ if $H$ is a subgroup of $(G, *)$.
 \subsubsection{Proposition 2.6.8: $H<G$, $(H,*)$ is a group: A group's operation with its any subgroup is also a group}
 \begin{proposition}[Proposition 2.6.8]
     If $(G, *)$ is a group, $H \subset G$ is a subgroup, then $(H, *)$ is a group.
