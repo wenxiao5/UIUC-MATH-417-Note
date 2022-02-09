@@ -1103,7 +1103,6 @@ $Isom(\mathbb{R}^n)=\{\Phi_{A,v}|A\in O(n), v\in \mathbb{R}^n \}$
 \subsubsection{Definition}
 A \textit{group} is a nonempty set $G$ with a binary operation $*:G \times G \rightarrow G$ s.t.
 \begin{enumerate}[(1)]
-    \item Binary operation on $G$, $*:G \times G \rightarrow G$
     \item $*$ is \textbf{associative}
     \item $G$ contains an \textbf{identity} element $e$ for $*$: $\exists e\in G$ s.t. $e * g = g * e = g\ \forall g \in G$
     \item Each element $a\in G$ has an \textbf{inverse} $b\in G$ s.t. $a*b=b*a=e$.
@@ -1127,18 +1126,7 @@ As we know a $V$ is a vector space over $\mathbb{F}$ means $V$ is a field whose 
 \begin{lemma}
     1. Identity of a group is unique. 2. Inverse of any element in a group is also unique.
 \end{lemma}
-\begin{proof}
-\quad\\
-1. Let $e,e'$ be two identities in $G$, then $e*e'=e=e'$.
 
-2. Suppose $b,c$ are both inverse of $a$, then
-\begin{equation}
-    \begin{aligned}
-        b=b*e=b*(a*c)=(b*a)*c=e*c=c
-    \end{aligned}
-    \nonumber
-\end{equation}
-\end{proof}
 
 
 
@@ -1201,26 +1189,11 @@ If $H\neq\{e\}$, then $H$ is a nontrivial subgroup.
 \end{theorem}
 \begin{proof}
 \quad\\
-"$\Rightarrow$": if $H\leq G$ be a subgroup.
-\begin{enumerate}
-    \item $H$ is a group $\Rightarrow$ $*$ is a binary operation on $H$, $*:H\times H \rightarrow H$ i.e. $H$ is closed under $*$.
-    \item Identity of $H$, $e_H$ is also a identity of $G$, due to the uniqueness of identity, $e_H=e_G$.
-    \item $a\in H$, $a$'s inverse $a'_H\in H$ is also an inverse in $G$, due to the uniqueness of identity, $a'_H=a'_G$.
-\end{enumerate}
-"$\Leftarrow$":
-\begin{enumerate}
-    \item $H$ is closed under $*$ $\Rightarrow	$ $*$ is a binary operation on $H$.
-    \item 2,3 fufill the requirement of identity and inverse.
-    \item $*$ is operation of group $G$ $\Rightarrow$ $*$ is associative.
-    
-    Hence $H$ is itself a group.
-    \item $H$ is a subeset of $G$, then $H$ is s subgroup of $G$.
-\end{enumerate}
+
 \end{proof}
 
 
 \subsubsection{Proposition 2.6.8: $H<G$, $(H,*)$ is a group: A group's operation with its any subgroup is also a group}
-不同的definition.
 \begin{proposition}[Proposition 2.6.8]
     If $(G, *)$ is a group, $H \subset G$ is a subgroup, then $(H, *)$ is a group.
 \end{proposition}
@@ -1257,17 +1230,50 @@ Let $P_n\subset \mathbb{R}^2$ be a regular $n-gon$
 \end{figure}\end{center}
 $D_n<Isom(\mathbb{R}^2)$, $D_n=\{\Phi \in Isom(\mathbb{R}^2)|\Phi(P_n)=P_n\}$
 
+\section{Ring $(R,+,\cdot)$: $+$ is associative, commutative, identity, inverse $\in R$; $\cdot$ is associative, distributes over $+$}
+\begin{definition}
+    A ring is a nonempty set with two operations, called addition and multiplication, $(R,+,\cdot)$ such that
+\end{definition}
+(1): $(R,+)$ is an ablian group: i.e. $+$ is associatve and commucative. $0,-a\in R$\\
+(2): $\cdot$ is associative.\\
+(3): $\cdot$ distributes over $+$: $\forall a,b,c\in R$, $a\cdot(b+c)=a\cdot b+a\cdot c$ and $(b+c)\cdot a=b\cdot a+c\cdot a$
+\subsection{Commutative ring: ring's $\cdot$ is commutative}
+If "$\cdot$" is commutative, we call $(R, +, \cdot)$ a commutative ring.
+\subsection{Ring with 1: exists multiplication identity $1\in R$}
+If there exists an element $1\in R\backslash \{0\}$ such that $a1=1a=a,\ \forall a\in R$,then we say that $R$ is a ring with 1.
 
+\subsection{Field $\mathbb{F}$ is a commutative ring with 1; $\mathbb{F}[x]$ is also a commutative ring with 1}
+Field $(\mathbb{F}, +, \cdot)$ (close, associative, commutative, distributive(M over A), identity $\&$ inverse(M,A))\\
+Proposition 2.3.2: Polynomial ring (close, associative, commutative, distributive(M over A), identity(M,A), inverse(only A))
+
+\subsection{$S\subset R$: Subring (closed under $+$ and $\cdot$; addictive inverse $-a\in S$)}
+\subsubsection{Proposition 2.6.27: $(S,+,\cdot)$ is a ring}
+\begin{proposition}[Proposition 2.6.27]
+    If $S\subset R$ is a subring, then $+,\cdot$ make $S$ into a ring.
+\end{proposition}
+
+\section{Group theory}
 \subsection{Properties of Group Operation}
+\subsubsection{Proposition 3.1.1: $g*h=h$ or $h*g=h$, then $g=e$; $g*h=e$ then $g=h^{-1}$ and $h=g^{-1}$}
 \begin{proposition}[Proposition 3.1.1]
     Let $(G,*)$ be a group with identity $e\in G$, then
 \end{proposition}
 (1) if $g,h\in G$ and either $g*h=h$ or $h*g=h$, then $g=e$\\
 (2) if $g,h\in G$ and $g*h=e$ then $g=h^{-1}$ and $h=g^{-1}$
-
+\subsubsection{Corollary 3.1.: $e^{-1}=e,\ (g^{-1})^{-1}=g,\ (g*h)^{-1}=h^{-1}*g^{-1}$}
 \begin{corollary}[Corollary 3.1.2]
     $e^{-1}=e,\ (g^{-1})^{-1}=g,\ (g*h)^{-1}=h^{-1}*g^{-1}$
 \end{corollary}
+\subsubsection{Proposition 3.1.3: $g * h = k * h$ or $h*g=h*k$, then $g = k$}
+\begin{proposition}[Proposition 3.1.3]
+    If $g * h = k * h$ or $h*g=h*k$, then $g = k$.
+\end{proposition}
+\subsubsection{Proposition 3.1.4: $g * x = h$ and $x*g=h$
+have unique solutions $x \in G$.}
+\begin{proposition}[Proposition 3.1.4]
+    $g * x = h$ and $x*g=h$
+    have unique solutions $x \in G$.
+\end{proposition}
 
 
 \subsection{Power of an Element}
@@ -1348,37 +1354,6 @@ The set of all subgroups of a group of G, together with the data of which subgro
     \caption{}
     \label{}
 \end{figure}\end{center}
-
-
-
-
-
-
-
-
-
-\section{Ring $(R,+,\cdot)$: $+$ is associative, commutative, identity, inverse $\in R$; $\cdot$ is associative, distributes over $+$}
-\begin{definition}
-    A ring is a nonempty set with two operations, called addition and multiplication, $(R,+,\cdot)$ such that
-\end{definition}
-(1): $(R,+)$ is an ablian group: i.e. $+$ is associatve and commucative. $0,-a\in R$\\
-(2): $\cdot$ is associative.\\
-(3): $\cdot$ distributes over $+$: $\forall a,b,c\in R$, $a\cdot(b+c)=a\cdot b+a\cdot c$ and $(b+c)\cdot a=b\cdot a+c\cdot a$
-\subsection{Commutative ring: ring's $\cdot$ is commutative}
-If "$\cdot$" is commutative, we call $(R, +, \cdot)$ a commutative ring.
-\subsection{Ring with 1: exists multiplication identity $1\in R$}
-If there exists an element $1\in R\backslash \{0\}$ such that $a1=1a=a,\ \forall a\in R$,then we say that $R$ is a ring with 1.
-
-\subsection{Field $\mathbb{F}$ is a commutative ring with 1; $\mathbb{F}[x]$ is also a commutative ring with 1}
-Field $(\mathbb{F}, +, \cdot)$ (close, associative, commutative, distributive(M over A), identity $\&$ inverse(M,A))\\
-Proposition 2.3.2: Polynomial ring (close, associative, commutative, distributive(M over A), identity(M,A), inverse(only A))
-
-\subsection{$S\subset R$: Subring (closed under $+$ and $\cdot$; addictive inverse $-a\in S$)}
-\subsubsection{Proposition 2.6.27: $(S,+,\cdot)$ is a ring}
-\begin{proposition}[Proposition 2.6.27]
-    If $S\subset R$ is a subring, then $+,\cdot$ make $S$ into a ring.
-\end{proposition}
-
 
 
 
