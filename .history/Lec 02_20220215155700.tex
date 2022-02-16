@@ -1385,40 +1385,18 @@ If $H=\left\langle [d]\right\rangle$ is a subgroup of $H$, then $[n]\in H$, so $
 The set of all subgroups of a group of G, together with the data of which subgroups contain which others is called the \textbf{subgroup lattice}. We often picture the subgroup lattice in a diagram with the entire group at the top, the trivial subgroup $\{ e \} $ at the bottom, and the intermediate subgroups in the middle, with lines drawn from subgroups up to larger groups.
 \begin{center}\begin{figure}[htbp]
     \centering
-    \includegraphics[scale=0.4]{lec1301.png}
+    \includegraphics[scale=0.6]{lec1301.png}
     \caption{}
     \label{}
 \end{figure}\end{center}
 
-\subsubsection{Coset}
-\begin{definition}
-If $H$ is a subgroup of a group $G$ and $a\in G$, then $aH=\{ah|h\in H\}\leq G$ is called \underline{left coset} of H.
-\end{definition}
-\begin{theorem}
-Let $H\leq G$, $a,b\in G$,
-\begin{enumerate}
-    \item $aH=bH$ if and only if $a^{-1}bH$
-    \item $aH\cap bH=\emptyset$ or $aH=bH$
-    \item $|aH|=|H|\ \forall a\in G$
-\end{enumerate}
-\end{theorem}
-\begin{proof}
-    \quad
 
-    \begin{enumerate}
-        \item Assume that $aH\cap bH\neq \emptyset$ and let $ah=bk\in aH\cap bH$ with $h,k\in H$.
-
-        $ah=bk\Leftrightarrow h=a^{-1}bk \Leftrightarrow a^{-1}b=hk^{-1}\in H$, thus $a^{-1}b\in H$.
-        \item When $aH\cap bH\neq \emptyset$ $\exists k_1,h\in H$ such that $ak_1=bh\in bH$. Then $\forall k_2\in H$ $a=bhk_1^{-1} \Rightarrow ak_2=bhk_1^{-1}k_2$ wheere $hk_1^{-1}k_2\in H$ so $ak_2\in bH,\ \forall k_2\in H$.
-        \item $x \rightarrow ax$ is bijection $\Rightarrow |aH|=|H|$.
-    \end{enumerate}
-\end{proof}
 
 \subsection{Homomorphism, Isomorphism}
 \subsubsection{Definition}
 \begin{definition}
 If $(G,*)$ and $(H,\circ)$ are groups, then a function $f:G \rightarrow	H$ is a \textbf{homomorphism} if $$f(x*y)=f(x)\circ f(y),\ \forall x,y\in G$$
-If $f$ is also a bijection, then $f$ is called an \textbf{isomorphism}. We say that $G$ and $H$ are \textbf{isomorphic} if exists an \textbf{isomorphism} $f$, denoted by $G\cong H$. (since $f$ is bijection, $G\cong H\Leftrightarrow H\cong G$)
+If $f$ is also a bijection, then $f$ is called an \textbf{isomorphism}. We say that $G$ and $H$ are \textbf{isomorphic}, denoted by $G\cong H$.
 \end{definition}
 
 Isomophic means these two pathes are the same.
@@ -1431,83 +1409,8 @@ Isomophic means these two pathes are the same.
 \end{equation}
 
 \begin{example}
-    $(\mathbb{Z}_2,+)$, $(\{-1,1\},\times)$ and $\phi: 0 \rightarrow 1;\ 1 \rightarrow -1$.
-    \begin{equation}
-        \begin{aligned}
-            \phi(0+0)=1=\phi(0)\times\phi(0)\\
-            \phi(0+1)=-1=\phi(0)\times\phi(1)\\
-            \phi(1+1)=1=\phi(1)\times\phi(1)\\
-        \end{aligned}
-        \nonumber
-    \end{equation}
+    $(\mathbb{Z}_2,+)$ and $(\{-1,1\},\times)$
 \end{example}
-
-
-\subsubsection{Theorem: $\left\{\begin{matrix}
-    \sigma: G \rightarrow G'\text{ injective}\\
-    \sigma(xy)=\sigma(x)\sigma(y)\ \forall x,y\in G
-\end{matrix}\right. \Rightarrow	\sigma(G)\leq G'$, $G$ is isomorphic to $\sigma(G)$}
-\begin{theorem}
-Let $\sigma: G \rightarrow G'$ be an injective map s.t. $$\sigma (xy)=\sigma(x)\sigma(y),\ \forall x,y\in G$$
-Then the image $\sigma(G)=\{\sigma(x):x\in G\}$ is a subgroup of $G'$ that is isomorphic to $G$.
-\end{theorem}
-\begin{proof}
-\quad\\
-\begin{enumerate}
-    \item Closed: $\forall a=\sigma(x),b=\sigma(y)\in \sigma(G)$, then $ab=\sigma(x)\sigma(y)=\sigma(xy)\in \sigma(G)$.
-    \item Identity: $\sigma(e)\in \sigma(G)$ is an identity for $\sigma(G)$: $\sigma(e)\sigma(x)=\sigma(ex)=\sigma(x)=\sigma(xe)=\sigma(x)\sigma(e)$
-    \item Inverse: $\sigma(x^{-1})$ is an inverse in $\sigma(G)$ for $\sigma(x)$: $\sigma(x^{-1})\sigma(x)=\sigma(e)=\sigma(x)\sigma(x^{-1})$
-\end{enumerate}
-\end{proof}
-
-\subsubsection{Cayley Theorem: $G$ is isomorphic to a subgroup of $S_G$}
-\begin{theorem}[Cayley Theorem]
-Let $G$ be a group and $S_G$ is the symmetric group of $G$ (the group of all permutation of $G$: $S_G=\{\text{Bijection } \sigma: G \rightarrow G\}$)
-Then $G$ is isomorphic to a subgroup of $S_G$.
-\end{theorem}
-\begin{proof}
-\quad\\
-Set a bijection $\phi: G \rightarrow S_G$ such that $\phi(g)=\lambda_g, \forall g\in G$, where $\lambda_g$ is a permutation $\lambda_g: x \rightarrow gx$.
-
-Claim: $\lambda_g\in S_G$ (i.e. $\lambda_g$ is a permutation of $G$, a \underline{bijection} $G \rightarrow	G$).
-\begin{enumerate}
-    \item $\lambda_g: G \rightarrow G$ is \underline{injective}
-    \begin{equation}
-        \begin{aligned}
-            \lambda_g(x)&=\lambda_g(y)\\
-            \Leftrightarrow	gx&=gy\\
-            \Leftrightarrow	x&=y\\
-        \end{aligned}
-        \nonumber
-    \end{equation}
-    \item $\lambda_g: G \rightarrow G$ is \underline{surjective}. Let $y\in G$
-    \begin{equation}
-        \begin{aligned}
-            \lambda_g(x)&=y\\
-            \Leftrightarrow	gx&=y\\
-            \Leftrightarrow	x&=g^{-1}y\\
-        \end{aligned}
-        \nonumber
-    \end{equation}
-\end{enumerate}
-
-
-Claim: $\phi(x)\phi(y)=\phi(xy)$
-\begin{equation}
-    \begin{aligned}
-        \phi(x)\phi(y)=\lambda_x\circ\lambda_y\\
-        (\lambda_x\circ\lambda_y)(z)=\lambda_x(yz)=xyz=\lambda_{xy}(z),\ \forall z\in G\\
-        \Rightarrow	\phi(x)\phi(y)=\phi(xy)
-    \end{aligned}
-    \nonumber
-\end{equation}
-
-According to previous theorem, $\phi(G)\leq G$ and $G$ is isomorphic to $\phi(G)$.
-
-\end{proof}
-
-
-
 
 
 

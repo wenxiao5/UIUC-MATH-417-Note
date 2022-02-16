@@ -1385,34 +1385,12 @@ If $H=\left\langle [d]\right\rangle$ is a subgroup of $H$, then $[n]\in H$, so $
 The set of all subgroups of a group of G, together with the data of which subgroups contain which others is called the \textbf{subgroup lattice}. We often picture the subgroup lattice in a diagram with the entire group at the top, the trivial subgroup $\{ e \} $ at the bottom, and the intermediate subgroups in the middle, with lines drawn from subgroups up to larger groups.
 \begin{center}\begin{figure}[htbp]
     \centering
-    \includegraphics[scale=0.4]{lec1301.png}
+    \includegraphics[scale=0.6]{lec1301.png}
     \caption{}
     \label{}
 \end{figure}\end{center}
 
-\subsubsection{Coset}
-\begin{definition}
-If $H$ is a subgroup of a group $G$ and $a\in G$, then $aH=\{ah|h\in H\}\leq G$ is called \underline{left coset} of H.
-\end{definition}
-\begin{theorem}
-Let $H\leq G$, $a,b\in G$,
-\begin{enumerate}
-    \item $aH=bH$ if and only if $a^{-1}bH$
-    \item $aH\cap bH=\emptyset$ or $aH=bH$
-    \item $|aH|=|H|\ \forall a\in G$
-\end{enumerate}
-\end{theorem}
-\begin{proof}
-    \quad
 
-    \begin{enumerate}
-        \item Assume that $aH\cap bH\neq \emptyset$ and let $ah=bk\in aH\cap bH$ with $h,k\in H$.
-
-        $ah=bk\Leftrightarrow h=a^{-1}bk \Leftrightarrow a^{-1}b=hk^{-1}\in H$, thus $a^{-1}b\in H$.
-        \item When $aH\cap bH\neq \emptyset$ $\exists k_1,h\in H$ such that $ak_1=bh\in bH$. Then $\forall k_2\in H$ $a=bhk_1^{-1} \Rightarrow ak_2=bhk_1^{-1}k_2$ wheere $hk_1^{-1}k_2\in H$ so $ak_2\in bH,\ \forall k_2\in H$.
-        \item $x \rightarrow ax$ is bijection $\Rightarrow |aH|=|H|$.
-    \end{enumerate}
-\end{proof}
 
 \subsection{Homomorphism, Isomorphism}
 \subsubsection{Definition}
@@ -1462,7 +1440,7 @@ Then the image $\sigma(G)=\{\sigma(x):x\in G\}$ is a subgroup of $G'$ that is is
 
 \subsubsection{Cayley Theorem: $G$ is isomorphic to a subgroup of $S_G$}
 \begin{theorem}[Cayley Theorem]
-Let $G$ be a group and $S_G$ is the symmetric group of $G$ (the group of all permutation of $G$: $S_G=\{\text{Bijection } \sigma: G \rightarrow G\}$)
+Let $G$ be a group and $S_G$ is the symmetric group of $G$ (the group of all permutation of $G$: $S_G=\{\text{Bijection} \sigma: G \rightarrow G\}$)
 Then $G$ is isomorphic to a subgroup of $S_G$.
 \end{theorem}
 \begin{proof}
@@ -1490,19 +1468,6 @@ Claim: $\lambda_g\in S_G$ (i.e. $\lambda_g$ is a permutation of $G$, a \underlin
         \nonumber
     \end{equation}
 \end{enumerate}
-
-
-Claim: $\phi(x)\phi(y)=\phi(xy)$
-\begin{equation}
-    \begin{aligned}
-        \phi(x)\phi(y)=\lambda_x\circ\lambda_y\\
-        (\lambda_x\circ\lambda_y)(z)=\lambda_x(yz)=xyz=\lambda_{xy}(z),\ \forall z\in G\\
-        \Rightarrow	\phi(x)\phi(y)=\phi(xy)
-    \end{aligned}
-    \nonumber
-\end{equation}
-
-According to previous theorem, $\phi(G)\leq G$ and $G$ is isomorphic to $\phi(G)$.
 
 \end{proof}
 
