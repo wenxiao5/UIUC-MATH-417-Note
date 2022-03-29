@@ -91,7 +91,7 @@
 \contentsline {subsubsection}{\numberline {6.6.10}$(\mathbb {Z}_n,+)$ Theorem 3.2.10: $\left \langle [d]\right \rangle <\left \langle [d']\right \rangle $ if and only if $d'|d$}{36}{subsubsection.6.6.10}%
 \contentsline {subsubsection}{\numberline {6.6.11}Subgroup Lattice}{36}{subsubsection.6.6.11}%
 \contentsline {subsection}{\numberline {6.7}Homomorphism}{37}{subsection.6.7}%
-\contentsline {subsubsection}{\numberline {6.7.1}Definition: Homomorphism}{37}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.1}Def: Homomorphism, Image}{37}{subsubsection.6.7.1}%
 \contentsline {subsubsection}{\numberline {6.7.2}Properties of Homomorphism}{37}{subsubsection.6.7.2}%
 \contentsline {subsubsection}{\numberline {6.7.3}Kernel of Homomorphism}{38}{subsubsection.6.7.3}%
 \contentsline {subsection}{\numberline {6.8}Isomorphism}{38}{subsection.6.8}%

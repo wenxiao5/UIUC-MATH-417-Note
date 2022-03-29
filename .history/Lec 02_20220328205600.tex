@@ -1452,7 +1452,7 @@ The set of all subgroups of a group of G, together with the data of which subgro
 
 
 \subsection{Homomorphism}
-\subsubsection{Def: Homomorphism, Image}
+\subsubsection{Definition: Homomorphism}
 \begin{definition}
 If $(G,*)$ and $(H,\circ)$ are groups, then a function $f:G \rightarrow	H$ is a \textbf{homomorphism} if $$f(x*y)=f(x)\circ f(y),\ \forall x,y\in G$$
 If $f$ is also a bijection, then $f$ is called an \textbf{isomorphism}.
@@ -1479,10 +1479,6 @@ If $f$ is also a bijection, then $f$ is called an \textbf{isomorphism}.
     $$\phi(gh)=(gh)^{-1}=h^{-1}g^{-1}=\phi(h)\phi(g)$$ $\phi$ is not a homonorphism in general; but it is homomorpgism if it is abelian.
 \end{enumerate}
 
-\begin{definition}
-    Let $\phi$ be a mapping of a set $X$ into a set $Y$, and let $A \subseteq X$ and $B \subseteq Y$. The \underline{image $\phi[A]$ of $A$ in $Y$ under $\phi$} is $\{\phi(a) \mid a \in A\}$. The set $\phi[X]$ is the \underline{range of $\phi$}. The \underline{inverse image $\phi^{-1}[B]$ of $B$ in $X$} is $\{x \in X \mid \phi(x) \in B\}$
-\end{definition}
-
 \subsubsection{Properties of Homomorphism}
 \begin{theorem}
     Let $\phi$ be a homomorphism of a group $G$ into a group $G'$, then
@@ -1494,6 +1490,9 @@ If $f$ is also a bijection, then $f$ is called an \textbf{isomorphism}.
     \item if $K'\leq G'$ then the inverse image $\phi^{-1}(K')=\{x\in G:\phi(x)\in K'\}\leq G$.
 \end{enumerate}
 
+\begin{definition}
+    Let $\phi$ be a mapping of a set $X$ into a set $Y$, and let $A \subseteq X$ and $B \subseteq Y$. The \underline{image $\phi[A]$ of $A$ in $Y$ under $\phi$} is $\{\phi(a) \mid a \in A\}$. The set $\phi[X]$ is the \underline{range of $\phi$}. The \underline{inverse image $\phi^{-1}[B]$ of $B$ in $X$} is $\{x \in X \mid \phi(x) \in B\}$
+\end{definition}
 
 \subsubsection{Kernel of Homomorphism}
 \begin{definition}
