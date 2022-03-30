@@ -2056,10 +2056,15 @@ Consider $[a,b]\in [G,G]$, prove that $\forall g\in G, g[a,b]g^{-1}\in [G,G]$
     \item For abelian group, $Z(G)=G$, $C(G)=\{e\}$
     \item $G=S_6$, $Z(G)=\{e\}$, $C(G)=\{1,\rho,\rho^2\}$
     \item $G=D_8=\{1,\rho,\rho^2,\rho^3,\sigma,\sigma\rho,\sigma\rho^2,\sigma\rho^3\}$, $Z(G)=\{1,\rho^2\}$, $C(G)=\{1,\rho^2\}$
-    \item $G=D_12$, $Z(G)=\{1,\rho^3\}$, $C(G)=\{1,\rho^2,\rho^4\}$
+    \item $G=D_{12}$, $Z(G)=\{1,\rho^3\}$, $C(G)=\{1,\rho^2,\rho^4\}$
     \item $G=A_4$, $Z(G)=\{(1)\}$, $C(G)=\{(1),(12)(34),(13)(24),(14)(23)\}$
     \item $G=S_4$, $Z(G)=\{(1)\}$, $C(G)=A_4$
 \end{enumerate}
+Commutator subgroup of $S_n$ is $A_n$.
+
+Commutator subrgoup of $D_{2n}$ is $\{1,\rho^2,...,\rho^{n-2}\}$
+
+$\sigma\rho^{a}=\rho^{n-a}\sigma=\rho^{n-2a}(\rho^{a}\sigma) \Rightarrow \rho^{n-2a}$ is a commutator $\forall a\in \mathbb{Z}$ $\Rightarrow$ $C(D_{2n})=\{1,\rho^2,...\rho^{n-2}\}$ if $n$ is even.
 
 \subsubsection{Thm: if $N \lhd G$, "$G/N$ is abelian" $\Leftrightarrow$ "$[G,G] < N$"}
 \begin{theorem}
@@ -2100,7 +2105,7 @@ $$
 \begin{definition}
     A ring is a nonempty set with two operations, called addition and multiplication, $(R,+,\cdot)$ such that
 \end{definition}
-(1): $(R,+)$ is an ablian group: i.e. $+$ is associatve and commucative. $0,-a\in R$\\
+(1): $(R,+)$ is an abelian group: i.e. $+$ is associatve and commucative. $0,-a\in R$\\
 (2): $\cdot$ is associative.\\
 (3): $\cdot$ distributes over $+$: $\forall a,b,c\in R$, $a\cdot(b+c)=a\cdot b+a\cdot c$ and $(b+c)\cdot a=b\cdot a+c\cdot a$
 
@@ -2189,6 +2194,13 @@ Which is equal to a ring satifies \underline{identity, inverse and commutative i
 Field $(\mathbb{F}, +, \cdot)$ (close, associative, commutative, distributive(M over A), identity $\&$ inverse(M,A))
 
 \textbf{Note:} nonzero elements of a \underline{finite field} can form a cyclic (sufficient for abelian) mutiplication group.
+
+\begin{center}\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.5]{collection of rings.png}
+    \caption{example: 1.$\mathbb{Z}_2,\mathbb{Q}$, 2.$\mathbb{Z}$, 3.$\mathbb{Z}_4$, 4.$2\mathbb{Z}$ 5.$M_2(\mathbb{Z})$,$M_2(\mathbb{R})$, 6.upper-triangular matrices with integer entries and all zeros on the main diagonal}
+    \label{}
+\end{figure}\end{center}
 
 \subsubsection{Differences between "Field" and "Integral Domain"}
 Def: An \underline{integral domain

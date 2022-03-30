@@ -148,80 +148,80 @@
 \contentsline {subsubsection}{\numberline {7.2.3}Lemma: A unit is not zero divisor}{51}{subsubsection.7.2.3}%
 \contentsline {subsubsection}{\numberline {7.2.4}Lemma: A field doesn't has zero divisors}{52}{subsubsection.7.2.4}%
 \contentsline {subsubsection}{\numberline {7.2.5}Thm: Every field is an integral domain}{52}{subsubsection.7.2.5}%
-\contentsline {subsubsection}{\numberline {7.2.6}Thm: Every finite integral domain is a field}{52}{subsubsection.7.2.6}%
-\contentsline {subsubsection}{\numberline {7.2.7}Note: Finite Integral Domain $\subset $ Field $\subset $ Integral Domain}{52}{subsubsection.7.2.7}%
-\contentsline {subsection}{\numberline {7.3}The Characteristic of a Ring}{52}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Def: characteristic $n$ is the least positive integer s.t. $n\cdot a=0,\forall a\in R$}{52}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.2.6}Thm: Every finite integral domain is a field}{53}{subsubsection.7.2.6}%
+\contentsline {subsubsection}{\numberline {7.2.7}Note: Finite Integral Domain $\subset $ Field $\subset $ Integral Domain}{53}{subsubsection.7.2.7}%
+\contentsline {subsection}{\numberline {7.3}The Characteristic of a Ring}{53}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Def: characteristic $n$ is the least positive integer s.t. $n\cdot a=0,\forall a\in R$}{53}{subsubsection.7.3.1}%
 \contentsline {subsubsection}{\numberline {7.3.2}Thm: In a ring with $1$, characteristic $n\in \mathbb {Z}^+$ s.t. $n\cdot 1=0$}{53}{subsubsection.7.3.2}%
 \contentsline {section}{\numberline {8}The Ring $\mathbb {Z}_n$ (Fermat's and Euler's Theorems)}{53}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Fermat's Theorem}{53}{subsection.8.1}%
 \contentsline {subsubsection}{\numberline {8.1.1}Thm: nonzero elements in $\mathbb {Z}_p$ ($p$ is prime) form a group under multiplication}{53}{subsubsection.8.1.1}%
 \contentsline {subsubsection}{\numberline {8.1.2}Cor: (Little Theorem of Fermat) $a\in \mathbb {Z}$ and $p$ is prime not dividing $a$, then $a^{p-1}\equiv 1 \text { mod } p$ ($p$ divides $a^{p-1}-1$)}{53}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Cor: (Little Theorem of Fermat) If $a\in \mathbb {Z}$, then $a^p\equiv a \text { mod }p$ for any prime $p$}{53}{subsubsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.2}Euler's Theorem}{53}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Thm: $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$ forms a group under multiplication}{53}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Def: \underline {Euler phi function} $\phi (n)=|G_n|$, where $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$}{53}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Cor: (Little Theorem of Fermat) If $a\in \mathbb {Z}$, then $a^p\equiv a \text { mod }p$ for any prime $p$}{54}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Euler's Theorem}{54}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Thm: $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$ forms a group under multiplication}{54}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Def: \underline {Euler phi function} $\phi (n)=|G_n|$, where $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$}{54}{subsubsection.8.2.2}%
 \contentsline {subsubsection}{\numberline {8.2.3}Thm: (Euler's Theorem) If $a\in \mathbb {Z}$, $n\geq 2$ s.t. $gcd(a,n)=1$ then $a^{\phi (n)}\equiv 1 \text { mod }n$}{54}{subsubsection.8.2.3}%
 \contentsline {subsection}{\numberline {8.3}Application to $ax \equiv b$ (mod $m$)}{54}{subsection.8.3}%
 \contentsline {subsubsection}{\numberline {8.3.1}Thm: find solution of $ax \equiv b$ (mod $m$), $gcd(a,m)=1$}{54}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8.3.2}Thm: $ax \equiv b$ (mod $m$), $d=gcd(a,m)$ has solutions if $d|b$, the number of solutions is $d$}{54}{subsubsection.8.3.2}%
-\contentsline {subsubsection}{\numberline {8.3.3}Cor: $ax \equiv b$ (mod $m$), $d=gcd(a,m)$, $d|b$, then solutions are $((\frac {a}{d})^{\phi (\frac {m}{d})-1}\frac {b}{d}+k\frac {m}{d})+(m \mathbb {Z}),\hskip 1em\relax k=0,1,...,d-1$}{54}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.2}Thm: $ax \equiv b$ (mod $m$), $d=gcd(a,m)$ has solutions if $d|b$, the number of solutions is $d$}{55}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Cor: $ax \equiv b$ (mod $m$), $d=gcd(a,m)$, $d|b$, then solutions are $((\frac {a}{d})^{\phi (\frac {m}{d})-1}\frac {b}{d}+k\frac {m}{d})+(m \mathbb {Z}),\hskip 1em\relax k=0,1,...,d-1$}{55}{subsubsection.8.3.3}%
 \contentsline {section}{\numberline {9}The Field of Quotients of an Integral Domain}{55}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Step 1. Define what the elements of $F$ are to be. (Define $S/\sim $)}{55}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Def: equivalent relation $(a,b)\sim (c,d) \Leftrightarrow ad = bc$}{55}{subsubsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.2}Step 2. Define the binary operations of addition and multiplication on $S/\sim $.}{55}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}lemma: well-defined operations $+,\times $}{55}{subsubsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.3}Step 3. Check all the field axioms to show that F is a field under these operations.}{55}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Thm: $S/\sim $ is a field with $+,\times $}{55}{subsubsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.4}Step 4. Show that F can be viewed as containing D as an integral subdomain.}{56}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}Lem: $\phi (a)=[(a,1)]$ is an isomorphism between $D$ and $\{[(a,1)]|a\in D\}$}{56}{subsubsection.9.4.1}%
-\contentsline {subsubsection}{\numberline {9.4.2}Thm: every element of $F$ can be expressed as a quotient of two elements of $D$: $[(a,b)]=\frac {\phi (a)}{\phi (b)}$}{56}{subsubsection.9.4.2}%
+\contentsline {subsubsection}{\numberline {9.1.1}Def: equivalent relation $(a,b)\sim (c,d) \Leftrightarrow ad = bc$}{56}{subsubsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.2}Step 2. Define the binary operations of addition and multiplication on $S/\sim $.}{56}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}lemma: well-defined operations $+,\times $}{56}{subsubsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.3}Step 3. Check all the field axioms to show that F is a field under these operations.}{56}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Thm: $S/\sim $ is a field with $+,\times $}{56}{subsubsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.4}Step 4. Show that F can be viewed as containing D as an integral subdomain.}{57}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Lem: $\phi (a)=[(a,1)]$ is an isomorphism between $D$ and $\{[(a,1)]|a\in D\}$}{57}{subsubsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.2}Thm: every element of $F$ can be expressed as a quotient of two elements of $D$: $[(a,b)]=\frac {\phi (a)}{\phi (b)}$}{57}{subsubsection.9.4.2}%
 \contentsline {section}{\numberline {10}Polynomials}{57}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Def: Polynomials}{57}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Rings of Polynomials}{57}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Thm: $R[x]$ is a ring under addition and multiplication}{57}{subsubsection.10.2.1}%
-\contentsline {subsubsection}{\numberline {10.2.2}Def: evaluation homomorphism}{57}{subsubsection.10.2.2}%
-\contentsline {subsubsection}{\numberline {10.2.3}Def: $\alpha $ is zero if $EV_{x=\alpha }(f(x))=0$}{58}{subsubsection.10.2.3}%
-\contentsline {subsection}{\numberline {10.3}Degree of a Polynomial: $deg(f)$}{58}{subsection.10.3}%
-\contentsline {subsubsection}{\numberline {10.3.1}Lemma 2.3.3: $deg(fg)=deg(f)+deg(g) ,\ deg(f+g)\leq \qopname \relax m{max}\{deg(f),deg(g)\}$}{58}{subsubsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.2}Rings of Polynomials}{58}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Thm: $R[x]$ is a ring under addition and multiplication}{58}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Def: evaluation homomorphism}{58}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Def: $\alpha $ is zero if $EV_{x=\alpha }(f(x))=0$}{59}{subsubsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.3}Degree of a Polynomial: $deg(f)$}{59}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Lemma 2.3.3: $deg(fg)=deg(f)+deg(g) ,\ deg(f+g)\leq \qopname \relax m{max}\{deg(f),deg(g)\}$}{59}{subsubsection.10.3.1}%
 \contentsline {subsection}{\numberline {10.4}Corollary 2.3.5: Unit(invertible) in $\mathbb {F}[x]$: constant$\neq 0$ iff $deg(f)=0$}{59}{subsection.10.4}%
 \contentsline {subsection}{\numberline {10.5}\underline {Irreducible} Polynomials: “无法分解为两个$degree\geq 1$的多项式积”的多项式: 至少一个是constant (i.e. $degree=0$)}{59}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}Theorem 2.3.6：nonconstant polynomials可以被唯一地分解}{59}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.6}Theorem 2.3.6：nonconstant polynomials可以被唯一地分解}{60}{subsection.10.6}%
 \contentsline {subsection}{\numberline {10.7}Divisibility of Polynomials}{60}{subsection.10.7}%
 \contentsline {subsubsection}{\numberline {10.7.1}Greatest common divisor of $f$ and $g$: is not unique, we denote monic Greatest common divisor as $gcd(f,g)$}{60}{subsubsection.10.7.1}%
-\contentsline {subsubsection}{\numberline {10.7.2}Proposition 2.3.9: Euclidean Algorithm of polynomials}{60}{subsubsection.10.7.2}%
-\contentsline {subsubsection}{\numberline {10.7.3}Proposition 2.3.10: $gcd(f,g)$ 是degree最小的f,g的线性组合}{60}{subsubsection.10.7.3}%
-\contentsline {subsubsection}{\numberline {10.7.4}Proposition 2.3.12: $gcd(f,g)=1, f|gh\Rightarrow f|h$}{61}{subsubsection.10.7.4}%
-\contentsline {subsubsection}{\numberline {10.7.5}Corollary 2.3.13: irreducible $f$, $f|gh$ $\Rightarrow f|g$ or $f|h$}{61}{subsubsection.10.7.5}%
-\contentsline {subsection}{\numberline {10.8}Roots}{61}{subsection.10.8}%
+\contentsline {subsubsection}{\numberline {10.7.2}Proposition 2.3.9: Euclidean Algorithm of polynomials}{61}{subsubsection.10.7.2}%
+\contentsline {subsubsection}{\numberline {10.7.3}Proposition 2.3.10: $gcd(f,g)$ 是degree最小的f,g的线性组合}{61}{subsubsection.10.7.3}%
+\contentsline {subsubsection}{\numberline {10.7.4}Proposition 2.3.12: $gcd(f,g)=1, f|gh\Rightarrow f|h$}{62}{subsubsection.10.7.4}%
+\contentsline {subsubsection}{\numberline {10.7.5}Corollary 2.3.13: irreducible $f$, $f|gh$ $\Rightarrow f|g$ or $f|h$}{62}{subsubsection.10.7.5}%
+\contentsline {subsection}{\numberline {10.8}Roots}{62}{subsection.10.8}%
 \contentsline {subsubsection}{\numberline {10.8.1}Corollary 2.3.16(of Euclidean Algorithm): $f$ 可被分为 $(x-\alpha )q+f(\alpha )$i.e. if $\alpha $ is a root, then $(x-\alpha )|f$}{62}{subsubsection.10.8.1}%
 \contentsline {subsection}{\numberline {10.9}Multiplicity}{62}{subsection.10.9}%
 \contentsline {subsubsection}{\numberline {10.9.1}$\textit {Sum of multiplicity}\leq deg(f)$}{62}{subsubsection.10.9.1}%
 \contentsline {subsection}{\numberline {10.10}Roots in a filed may not in its subfield}{62}{subsection.10.10}%
-\contentsline {section}{\numberline {11}Linear Algebra}{62}{section.11}%
-\contentsline {subsection}{\numberline {11.1} Vector Space $(V,+,\times )$ (over a field $\mathbb {F}$)}{62}{subsection.11.1}%
-\contentsline {subsubsection}{\numberline {11.1.1}A field is a vector space over its subfield}{62}{subsubsection.11.1.1}%
+\contentsline {section}{\numberline {11}Linear Algebra}{63}{section.11}%
+\contentsline {subsection}{\numberline {11.1} Vector Space $(V,+,\times )$ (over a field $\mathbb {F}$)}{63}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}A field is a vector space over its subfield}{63}{subsubsection.11.1.1}%
 \contentsline {subsubsection}{\numberline {11.1.2} Vector subspace}{63}{subsubsection.11.1.2}%
 \contentsline {subsection}{\numberline {11.2}Linear independent, Linear combination}{63}{subsection.11.2}%
 \contentsline {subsection}{\numberline {11.3}span V, basis, dimension, Proposition 2.4.10}{63}{subsection.11.3}%
-\contentsline {subsubsection}{\numberline {11.3.1}Standard basis vectors}{63}{subsubsection.11.3.1}%
-\contentsline {subsection}{\numberline {11.4}Linear transformation}{63}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.3.1}Standard basis vectors}{64}{subsubsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.4}Linear transformation}{64}{subsection.11.4}%
 \contentsline {subsubsection}{\numberline {11.4.1}Corollary 2.4.16: 一个线性变换对应一个矩阵 \textit {bijection} $\mathcal {L} (V,M)\rightarrow M_{m\times n}(\mathbb {F})$}{64}{subsubsection.11.4.1}%
-\contentsline {subsubsection}{\numberline {11.4.2}Proposition 2.4.19: 线性变换矩阵相乘仍为线性变换矩阵}{64}{subsubsection.11.4.2}%
-\contentsline {subsection}{\numberline {11.5}GL(V): invertible(bijective) linear transformations $V \rightarrow V$}{64}{subsection.11.5}%
-\contentsline {section}{\numberline {12}Euclidean geometry basics}{64}{section.12}%
-\contentsline {subsection}{\numberline {12.1} Euclidean distance, inner product}{64}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Proposition 2.4.19: 线性变换矩阵相乘仍为线性变换矩阵}{65}{subsubsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.5}GL(V): invertible(bijective) linear transformations $V \rightarrow V$}{65}{subsection.11.5}%
+\contentsline {section}{\numberline {12}Euclidean geometry basics}{65}{section.12}%
+\contentsline {subsection}{\numberline {12.1} Euclidean distance, inner product}{65}{subsection.12.1}%
 \contentsline {subsection}{\numberline {12.2}Isometry of $\mathbb {R}^n$: a bijection $\mathbb {R}^n \rightarrow \mathbb {R}^n$ preserves distance}{65}{subsection.12.2}%
 \contentsline {subsubsection}{\numberline {12.2.1}$Isom(\mathbb {R}^n)$: set of all isometries of $\mathbb {R}^n$}{65}{subsubsection.12.2.1}%
 \contentsline {subsubsection}{\numberline {12.2.2}$Isom(\mathbb {R}^n)$ is closed under $\circ $ and inverse}{65}{subsubsection.12.2.2}%
-\contentsline {subsection}{\numberline {12.3}$A\in GL(n,\mathbb {R})$, $T_A(v)=Av$: $A^tA=I \Leftrightarrow T_A\in Isom(\mathbb {R}^n)$}{65}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4} Linear isometries i.e. orthogonal group $O(n)=\{A\in GL(n,\mathbb {R})|A^tA=I \}$}{65}{subsection.12.4}%
-\contentsline {subsubsection}{\numberline {12.4.1}Special orthogonal group $SO(n)=\{A\in O(n) | det(A)=1\}$: orthogonal group with $det(A)=1$}{65}{subsubsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.3}$A\in GL(n,\mathbb {R})$, $T_A(v)=Av$: $A^tA=I \Leftrightarrow T_A\in Isom(\mathbb {R}^n)$}{66}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4} Linear isometries i.e. orthogonal group $O(n)=\{A\in GL(n,\mathbb {R})|A^tA=I \}$}{66}{subsection.12.4}%
+\contentsline {subsubsection}{\numberline {12.4.1}Special orthogonal group $SO(n)=\{A\in O(n) | det(A)=1\}$: orthogonal group with $det(A)=1$}{66}{subsubsection.12.4.1}%
 \contentsline {subsection}{\numberline {12.5}translation: $\tau _v(x)=x+v$}{66}{subsection.12.5}%
 \contentsline {subsubsection}{\numberline {12.5.1}translation is an isometry}{66}{subsubsection.12.5.1}%
 \contentsline {subsection}{\numberline {12.6}The composition of a translation and an orthogonal transformation is an isometry $\Phi _{A,v}(x)=\tau _v(T_A(x))=Ax+v$}{66}{subsection.12.6}%
-\contentsline {subsubsection}{\numberline {12.6.1}Theorem 2.5.3: All isometries can be represented by a composition of \textit {a translation} and \textit {an orthogonal transformation}, $Isom(\mathbb {R}^n)=\{\Phi _{A,v}|A\in O(n), v\in \mathbb {R}^n \}$}{66}{subsubsection.12.6.1}%
-\contentsline {section}{\numberline {13}Complex numbers}{66}{section.13}%
+\contentsline {subsubsection}{\numberline {12.6.1}Theorem 2.5.3: All isometries can be represented by a composition of \textit {a translation} and \textit {an orthogonal transformation}, $Isom(\mathbb {R}^n)=\{\Phi _{A,v}|A\in O(n), v\in \mathbb {R}^n \}$}{67}{subsubsection.12.6.1}%
+\contentsline {section}{\numberline {13}Complex numbers}{67}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Geometric Meaning of Addition and Multiplication}{67}{subsection.13.1}%
 \contentsline {subsection}{\numberline {13.2}Theorem 2.1.1: $f(x)=a_0+a_1x+...+a_nx^n$ with coefficients $a_0,a_1,...,a_n\in \mathbb {C}$. Then $f$ has a \underline {root} in $\mathbb {C}$: $\exists \alpha \in \mathbb {C}$ s.t. $f(\alpha )=0$}{68}{subsection.13.2}%
 \contentsline {subsubsection}{\numberline {13.2.1}Corollary 2.1.2: $f(x)=a_n\DOTSB \prod@ \slimits@ _{i=1}^n(x-k_i)=a_n(x-k_1)(x-k_2)...(x-k_n)$, where $k_1,k_2,...,k_n$ are roots of $f(x)$}{68}{subsubsection.13.2.1}%
