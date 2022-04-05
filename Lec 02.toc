@@ -127,7 +127,8 @@
 \contentsline {subsubsection}{\numberline {6.15.2}Thm: commutator subgroup is normal}{48}{subsubsection.6.15.2}%
 \contentsline {subsubsection}{\numberline {6.15.3}Thm: if $N \lhd G$, "$G/N$ is abelian" $\Leftrightarrow $ "$[G,G] < N$"}{49}{subsubsection.6.15.3}%
 \contentsline {subsection}{\numberline {6.16}Group Action on a Set}{49}{subsection.6.16}%
-\contentsline {subsubsection}{\numberline {6.16.1}Def: }{49}{subsubsection.6.16.1}%
+\contentsline {subsubsection}{\numberline {6.16.1}Def: action of group $G$ on set $X$}{49}{subsubsection.6.16.1}%
+\contentsline {subsubsection}{\numberline {6.16.2}Thm: $\phi : G \rightarrow S_X$ as $\phi (g) = gx$ is a homomorphism}{49}{subsubsection.6.16.2}%
 \contentsline {section}{\numberline {7}Ring and Field}{49}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Ring $(R,+,\cdot )$: $+$ is associative, commutative, identity, inverse $\in R$; $\cdot $ is associative, distributes over $+$}{49}{subsection.7.1}%
 \contentsline {subsubsection}{\numberline {7.1.1}Def, Prop}{49}{subsubsection.7.1.1}%
