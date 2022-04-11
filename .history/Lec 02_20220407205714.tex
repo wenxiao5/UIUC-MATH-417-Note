@@ -2140,7 +2140,7 @@ $r$ disjoint orbits.
 
 \subsubsection{Orbit-Stabilizer Theorem}
 \begin{theorem}
-    Let $G$ act on $X$, and let $x\in X$, then $|Gx|=[G:G_x]=|G/G_x|=\frac{|G|}{|G_x|}$
+    Let $G$ act on $X$, and let $x\in X$, then $|Gx|=[G:G_x]=|G/G_x|$
 \end{theorem}
 \begin{example}
 
@@ -2150,14 +2150,9 @@ $r$ disjoint orbits.
 
 
 \subsection{Applications of $G-$sets to Counting}
-\subsubsection{Thm: Burnside's Formula}
-\begin{theorem}
-    Let $G$ be a finite group and $X$ a finite $G$-set. If $r$ is the number
-    of orbits in $X$ under $G$, then $$r=\frac{1}{|G|}\sum_{g\in G}|X^g|$$ i.e. $r$ equals to the average $|X^g|$, where $X^g=\{x:gx=x\}$
-\end{theorem}
-\begin{proof}
 
-\end{proof}
+
+
 
 
 
@@ -2573,7 +2568,7 @@ We call the $R[x]$ \textit{polynomial ring} over the ring $R$.
     \begin{aligned}
         &f=\sum_{i=0}^na_ix^i, g=\sum_{j=0}^na_jx^j \in R[x]\\
         &f+g=\sum_{i=0}^n(a_i+b_i)x^i\in R[x]\\
-        &fg=(\sum_{i=0}^na_ix^i)(\sum_{j=0}^na_jx^j)=\sum_{i=0}^{2n}(\sum_{j=0}^ia_jb_{i-j})x^i
+        &fg(\sum_{i=0}^na_ix^i)(\sum_{j=0}^na_jx^j)=\sum_{i=0}^{2n}(\sum_{j=0}^ia_jb_{i-j})x^i
     \end{aligned}
     \nonumber
 \end{equation}

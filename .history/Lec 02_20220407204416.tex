@@ -2121,11 +2121,6 @@ In general, for a group $G$ act on the set $X$, the homomorphism $\phi:G \righta
     For $G$ acting on $X$, define a relation $\sim$ on $X$ via $$x_1\sim x_2\Leftrightarrow x_2=gx_1\quad \text{for some }g\in G$$
 \end{theorem}
 
-\begin{definition}
-    A group $G$ is \textbf{transitive} on
-    a $G$-set $X$ if for each $x_1,x_2\in X$, there exists $g \in G$ such that $gx_1=x_2$.
-\end{definition}
-
 \subsubsection{Def: $Gx=\{gx|g\in G\}$ is the orbit of $x$}
 \begin{definition}
     For a group action $G$ on $X$, $X$ partitions into equivalence classes. Denote the class containing $x$ by $Gx$. $Gx=\{gx|g\in G\}$ is called the orbit of $x\in X$.
@@ -2137,32 +2132,6 @@ $r$ disjoint orbits.
 \begin{definition}
     Let $G$ act on $X$, for $x\in X$, define $G_x=\{g\in G|gx=x\}$, then $G_x$ is a subgroup of $G$ called the \textbf{stabilizer} of $x$. (or the \textbf{isotropy subgroup} of $x$)
 \end{definition}
-
-\subsubsection{Orbit-Stabilizer Theorem}
-\begin{theorem}
-    Let $G$ act on $X$, and let $x\in X$, then $|Gx|=[G:G_x]=|G/G_x|=\frac{|G|}{|G_x|}$
-\end{theorem}
-\begin{example}
-
-\end{example}
-
-
-
-
-\subsection{Applications of $G-$sets to Counting}
-\subsubsection{Thm: Burnside's Formula}
-\begin{theorem}
-    Let $G$ be a finite group and $X$ a finite $G$-set. If $r$ is the number
-    of orbits in $X$ under $G$, then $$r=\frac{1}{|G|}\sum_{g\in G}|X^g|$$ i.e. $r$ equals to the average $|X^g|$, where $X^g=\{x:gx=x\}$
-\end{theorem}
-\begin{proof}
-
-\end{proof}
-
-
-
-
-
 
 \section{Ring and Field}
 \subsection{Ring $(R,+,\cdot)$: $+$ is associative, commutative, identity, inverse $\in R$; $\cdot$ is associative, distributes over $+$}
@@ -2573,7 +2542,7 @@ We call the $R[x]$ \textit{polynomial ring} over the ring $R$.
     \begin{aligned}
         &f=\sum_{i=0}^na_ix^i, g=\sum_{j=0}^na_jx^j \in R[x]\\
         &f+g=\sum_{i=0}^n(a_i+b_i)x^i\in R[x]\\
-        &fg=(\sum_{i=0}^na_ix^i)(\sum_{j=0}^na_jx^j)=\sum_{i=0}^{2n}(\sum_{j=0}^ia_jb_{i-j})x^i
+        &fg(\sum_{i=0}^na_ix^i)(\sum_{j=0}^na_jx^j)=\sum_{i=0}^{2n}(\sum_{j=0}^ia_jb_{i-j})x^i
     \end{aligned}
     \nonumber
 \end{equation}
