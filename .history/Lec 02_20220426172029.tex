@@ -208,7 +208,7 @@ $*$ has \underline{identity element $e\in S$} if $a*e=e*a=a$ for all $s\in S$.
 
 
 \section{Equivalence relations and Partition}
-\subsection{Equivalence relations (rational equivalence in micro)}
+\subsection{Equivalence relations（rational equivalence in micro）}
 \textbf{rational equivalence in micro} Satisfy: (1)Reflexive, (2)Symmetric, (3)Transitive.
 Given a set $X$, a relation on X is a subset of $R\subset X\times X$. We write $a\sim b$.\\
 A relation $\sim$ is said to be\\
@@ -232,7 +232,7 @@ So this is an equivalence relation.
 2. \textit{Symmetric}: $a,b\in X ,a\sim b\Rightarrow b\sim a$.\\
 3. \textit{Transitive}: $\forall a,b,c\in X ,a\sim b, b\sim c \Rightarrow f(a)=f(b)=f(c) \Rightarrow a\sim c$.\\
 So $\sim_f$ is an equivalence relation.
-\subsection{Partition (separate a set into disjoint sets with no element left)}
+\subsection{Partition（separate a set into disjoint sets with no element left）}
 $X$ a set, a \underline{partition} of $X$ is a collection $\omega$ of subsets of $X$ s.t.
 \begin{enumerate}[1)]
     \item $\forall A,B\in\omega$ either $A=B$ or $A\cap B=\emptyset$.
@@ -1004,7 +1004,7 @@ Write $x=11k+1$. Substitute in $x\equiv 9 \text{ mod }13$:
 Then $x=11k+1=100$.
 
 \subsection{Congruence Classes: $[a]_n=\{a+kn|k\in\mathbb{Z} \}$}
-%将给定$n$，相同余数的数分为一组\\
+将给定$n$，相同余数的数分为一组\\
 Fix $n\in\mathbb{Z}_+$, we call $[a]_{n}=[a]$ the \underline{\textbf{congruence class}} of a modulo n.
 \begin{equation}
     \begin{aligned}
@@ -1049,7 +1049,7 @@ This is well defined, follows Lemma 1.5.3.
 
 \end{proof}
 \subsubsection{Units(i.e. invertible) in Congruence Classes}
-%将与$n$互质的数分为一组\\
+将与$n$互质的数分为一组\\
 Say $[a] \in \mathbb{Z}_n$ is a \textbf{unit} or is \textbf{invertible} if $\exists [b] \in \mathbb{Z}_n$ so that $[a][b] = [1]$.
 \subsubsection{Proposition 1.5.6: Set of units in congruence classes: $\mathbb{Z}_n^{\times}=\{[a]\in\mathbb{Z}_n|[a] \textit{ is a unit}\}=\{[a]\in\mathbb{Z}_n|gcd(a,n)=1\}$}
 The set of \textbf{invertible} elements in $\mathbb{Z}_n$ will be denoted $\mathbb{Z}_n^{\times}=\{[a]\in\mathbb{Z}_n|[a] \textit{ is a unit}\}$.
@@ -1275,7 +1275,7 @@ If $H\neq\{e\}$, then $H$ is a nontrivial subgroup.
 
 
 \subsubsection{Proposition 2.6.8: $H<G$, $(H,*)$ is a group: A group's operation with its any subgroup is also a group}
-%不同的definition.
+不同的definition.
 \begin{proposition}[Proposition 2.6.8]
     If $(G, *)$ is a group, $H \subset G$ is a subgroup, then $(H, *)$ is a group.
 \end{proposition}
@@ -1304,7 +1304,7 @@ If $\mathbb{F}$ is a field, $Aut(\mathbb{F})=\{\sigma:\mathbb{F}\rightarrow	\mat
 \begin{example}
     Dihedral Groups:
 \end{example}
-%保留多边形\\
+保留多边形\\
 Let $P_n\subset \mathbb{R}^2$ be a regular $n-gon$
 \begin{center}\begin{figure}[htbp]
     \centering
@@ -1326,7 +1326,7 @@ $D_n<Isom(\mathbb{R}^2)$, $D_n=\{\Phi \in Isom(\mathbb{R}^2)|\Phi(P_n)=P_n\}$
 
 
 \subsection{Power of an Element}
-We define $g^n$ recursively for $n \geq 0$ by setting $g^0 = e$ and for $n\geq 1$, we set $g^n = g^{n-1} * g$. For $n \leq 0$, we define $g^n = (g^{-1})^{-n}$.
+We define $g^n$ recursively for $n \geq 0$ by setting $g^0 = e$ and for $n\geq 1$, we set $g^n = g^{n−1} * g$. For $n \leq 0$, we define $g^n = (g^{−1})^{-n}$.
 \begin{proposition}[Proposition 3.1.5]
 (1) $g^n*g^m=g^{n+m}$; (2) $(g^n)^m=g^{nm}$
 \end{proposition}
@@ -2172,31 +2172,16 @@ Let $$X^g=\{x\in X\vert gx=x\};\ G_x=\{g\in G\vert gx=x\}$$
 
 
 \subsection{Applications of $G-$sets to Counting}
-As we showed before, the partition of $X$ as equivalence classes takes the form $$X=Gx_1\cup Gx_2\cup \cdots Gx_r$$
-where $r$ is the number of orbits in $X$.
-\subsubsection{Burnside's Formula: number of orbits in $X$: $r=\frac{1}{|G|}\sum_{g\in G}|X^g|$}
+\subsubsection{Thm: Burnside's Formula: number of orbits $r=\frac{1}{|G|}\sum_{g\in G}|X^g|$}
 \begin{theorem}
     Let $G$ be a finite group and $X$ a finite $G$-set. If $r$ is the number
     of orbits in $X$ under $G$, then $$r=\frac{1}{|G|}\sum_{g\in G}|X^g|$$ i.e. $r$ equals to the average $|X^g|$, where $X^g=\{x:gx=x\}$
 \end{theorem}
 \begin{proof}
-    Since $G_{x_0}=\{g\in G\vert gx=x\}=\{(g,x)\vert gx=x,g\in G,x=x_0\}$,$$\sum_{x\in X}|G_x|=|\{(g,x)\vert gx=x,g\in G,x\in X\}|$$
-    At the same time, $|X^{g_0}|=\{x\in X:gx=x\}=\{(g,x)\vert gx=x,g=g_0,x\in X\}$, then
-    $$\sum_{g\in G}|X^g|=|\{(g,x)\vert gx=x,g\in G,x\in X\}|=\sum_{x\in X}|G_x|$$
-    As we shoed before, $|G_{x}|=|G_{y}|,\forall x,y\in X$
-    \begin{equation}
-        \begin{aligned}
-            \Rightarrow \sum_{x\in X}|G_x|=|G|\sum_{x\in X}\frac{1}{|Gx|}=|G|\sum_{i=1}^r\sum_{x\in Gx_i}\frac{1}{|Gx|}=|G|\sum_{i=1}^r\frac{|Gx_i|}{|Gx_i|}=|G|r\\
-            \Rightarrow r=\frac{\sum_{x\in X}|G_x|}{|G|}=\frac{\sum_{g\in G}|X^g|}{|G|}
-        \end{aligned}
-        \nonumber
-    \end{equation}
+
 \end{proof}
 
-\subsubsection{Example: Counting}
-\begin{example}
 
-\end{example}
 
 
 
@@ -2960,12 +2945,11 @@ Obviously, $deg(f)=0\Rightarrow\ f$ is a unit.\\
 Suppose $f$ is a unit, i.e. $\exists g\in\mathbb{F}[x]$ s.t. $fg=1$.\\
 $0=deg(fg)=deg(f)+deg(g)\Rightarrow deg(f),deg(g)\geq0\Rightarrow deg(f)=0,deg(g)=0.$
 \end{proof}
-\subsection{\underline{Irreducible} Polynomials:}
-%“无法分解为两个$degree\geq1$的多项式积”的多项式: 至少一个是constant (i.e. $degree=0$)
+\subsection{\underline{Irreducible} Polynomials: “无法分解为两个$degree\geq1$的多项式积”的多项式: 至少一个是constant (i.e. $degree=0$)}
 A nonconstant polynomial $f$ is \underline{irreducible} if $f=uv,\ u,v\in\mathbb{F}[x]$, then either $u$ or $v$ is a unit(i.e., constant$\neq0$)
 
 
-\subsection{Theorem 2.3.6: nonconstant polynomials can be reduced uniquely}
+\subsection{Theorem 2.3.6：nonconstant polynomials可以被唯一地分解}
 \begin{theorem}[Theorem 2.3.6]
 Suppose $\mathbb{F}$ is a field and $f\in\mathbb{F}[x]$ is any nonconstant. Then $f = ap_1p_2\dots p_k$ where $a \in \mathbb{F},\ p_1,\dots p_k \in \mathbb{F}[x]$ are irreducible \underline{monic} polynomials (monic = i.e. leading coeff. 1). If $f = bq_1q_2\dots q_r$ with $b \in \mathbb{F}$ and
 $q_1,q_2,\dots ,q_r \in \mathbb{F}[x]$ monic irreducible, then $a = b, k = r$, and after reindexing $p_i = q_i,\ \forall i$
@@ -3029,15 +3013,14 @@ the $gcd$ is not unique, but the monic $gcd$ is unique. We call it \textbf{the m
 \begin{example}
 \begin{equation}
     \begin{aligned}
-        &f = 3x^3 - 5x^2 - 3x + 5, g = x^3 - 2x^2 + 1 \in \mathbb{Q}[x]\\
+        &f = 3x^3 - 5x^2 - 3x + 5, g = x^3 − 2x^2 + 1 \in \mathbb{Q}[x]\\
         &f=3g+x^2-3x+2
     \end{aligned}
     \nonumber
 \end{equation}
 \end{example}
 
-\subsubsection{Proposition 2.3.10:}
-%$gcd(f,g)$ 是degree最小的f,g的线性组合
+\subsubsection{Proposition 2.3.10: $gcd(f,g)$ 是degree最小的f,g的线性组合}
 \begin{proposition}[Proposition 2.3.10]
     Any 2 nonzero polynomials $f , g \in \mathbb{F}[x]$ have
     a gcd in $\mathbb{F}[x]$. In fact among all polynomials
@@ -3053,7 +3036,7 @@ Suppose $h'\in M$ is any nonzero element. $deg(h')\geq deg(h)\Rightarrow\ \exist
 \begin{example}
     \begin{equation}
         \begin{aligned}
-            &f = 3x^3 - 5x^2 - 3x + 5, g = x^3-2x^2 + 1 \in \mathbb{Q}[x]\\
+            &f = 3x^3 - 5x^2 - 3x + 5, g = x^3 − 2x^2 + 1 \in \mathbb{Q}[x]\\
             &f=3g+x^2-3x+2\\
             &g=(x+1)(x^2-3x+2)+x-1\\
             &x^2-3x+2=(x-2)(x-1)\\

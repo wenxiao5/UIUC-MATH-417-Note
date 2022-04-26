@@ -2,7 +2,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-%\usepackage{ctex}
+\usepackage{ctex}
 \usepackage{authblk}
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -96,7 +96,7 @@ A function $\sigma:A \rightarrow B$ is called,\\
 \end{equation}
 3. \textit{Bijective} (if injective and surjective)
 
-\subsubsection{Lemma 1.1.7: injective/surjective/bijective is preserved in composition}
+\subsubsection{Lemma 1.1.7: 两个injective/surjective/bijective的方程的composition保留性质}
 \begin{lemma}[Lemma 1.1.7]
     Suppose $\sigma:A \rightarrow B, \tau: B \rightarrow C$ are functions,\\
     If $\sigma, \tau$ are injective, then $\tau\circ\sigma$ is \textit{injective}.\\
@@ -208,8 +208,8 @@ $*$ has \underline{identity element $e\in S$} if $a*e=e*a=a$ for all $s\in S$.
 
 
 \section{Equivalence relations and Partition}
-\subsection{Equivalence relations (rational equivalence in micro)}
-\textbf{rational equivalence in micro} Satisfy: (1)Reflexive, (2)Symmetric, (3)Transitive.
+\subsection{Equivalence relations（理性等价的定义）}
+\textbf{理性的等价} 需要满足: (1)Reflexive, (2)Symmetric, (3)Transitive.
 Given a set $X$, a relation on X is a subset of $R\subset X\times X$. We write $a\sim b$.\\
 A relation $\sim$ is said to be\\
 1. \textit{Reflexive} if $\forall x\in X$, we have $x\sim x$.\\
@@ -232,7 +232,7 @@ So this is an equivalence relation.
 2. \textit{Symmetric}: $a,b\in X ,a\sim b\Rightarrow b\sim a$.\\
 3. \textit{Transitive}: $\forall a,b,c\in X ,a\sim b, b\sim c \Rightarrow f(a)=f(b)=f(c) \Rightarrow a\sim c$.\\
 So $\sim_f$ is an equivalence relation.
-\subsection{Partition (separate a set into disjoint sets with no element left)}
+\subsection{Partition（满足不重叠，无剩余的set拆分结果）}
 $X$ a set, a \underline{partition} of $X$ is a collection $\omega$ of subsets of $X$ s.t.
 \begin{enumerate}[1)]
     \item $\forall A,B\in\omega$ either $A=B$ or $A\cap B=\emptyset$.
@@ -252,7 +252,7 @@ Define the \textbf{equivalence class} of $x$ to be the subset $[x]\subset X$:
 Where $\sim$ is an equivalence relation.\\
 $\sim$ is reflexive $\Rightarrow x\in[x]$. We say that any $y\in[x]$ as a \textbf{representative} of the equivalence class.\\
 \subsubsection{$X/\sim$: set of equivalence classes}
-Set of equivalence classes is a \textbf{set} of division result of an \textit{equivalence relation}\\
+Set of equivalence classes是一个\textbf{set}被某种\textit{equivalence relation}分类的结果\\
 We write the \underline{set of equivalence classes}
 \begin{equation}
     \begin{aligned}
@@ -262,15 +262,15 @@ We write the \underline{set of equivalence classes}
 \end{equation}
 
 \subsection{Relationship of \underline{\textit{Equivalence relation}}, \underline{\textit{Set of equivalence classes}} and \underline{\textit{Partitions}}}
-%给定$X$，\underline{\textit{Equivalence relation}} $\sim$ 与\underline{\textit{Set of equivalence classes}} $X/\sim$具有相同的信息量；
-%包含所有\underline{\textit{Partitions}}的集合与包含所有\underline{\textit{Set of equivalence classes}} 的集合相同。
+给定$X$，\underline{\textit{Equivalence relation}} $\sim$ 与\underline{\textit{Set of equivalence classes}} $X/\sim$具有相同的信息量；
+包含所有\underline{\textit{Partitions}}的集合与包含所有\underline{\textit{Set of equivalence classes}} 的集合相同。
 
 \subsubsection{Theorem 1.2.7: Equivalence relation $\sim$ $\Leftrightarrow$ Set of equivalence classes $X/\sim$; $\{$all Sets of equivalence classes$\}=\{$all Partitions$\}$}
 \begin{theorem}[Theorem 1.2.7]
     $X/\sim$ is a partition of $X$. Conversely, given a partition $\omega$ of $X$, there exists a unique equivalence relation $\sim_\omega$ s.t. $X/\sim_\omega=\omega$.\\
 \end{theorem}
-%（1）\underline{\textit{Equivalence relation}} $\sim$生成一个对应的\underline{\textit{Set of equivalence classes}} $X/\sim$，该$X/\sim$就是一个Partition。(可以看作 1. 所有Set of equivalence classes都是 Partitions; 2.$\sim \Rightarrow X/\sim$ 由方式推结果)\\
-%（2）反之，我们也可以根据已有的Partition $\omega$, 将其作为一种分类方式$\sim_{\omega}$的$\underline{结果}$(i.e. $X/\sim_\omega=\omega$) 这个对应的$\sim_{\omega}$存在且是唯一的。(可以看作 1. 所有Partitions都是 Set of equivalence classes; 2.$X/\sim\Rightarrow\sim$ 由结果推方式)
+（1）\underline{\textit{Equivalence relation}} $\sim$生成一个对应的\underline{\textit{Set of equivalence classes}} $X/\sim$，该$X/\sim$就是一个Partition。(可以看作 1. 所有Set of equivalence classes都是 Partitions; 2.$\sim \Rightarrow X/\sim$ 由方式推结果)\\
+（2）反之，我们也可以根据已有的Partition $\omega$, 将其作为一种分类方式$\sim_{\omega}$的$\underline{结果}$(i.e. $X/\sim_\omega=\omega$) 这个对应的$\sim_{\omega}$存在且是唯一的。(可以看作 1. 所有Partitions都是 Set of equivalence classes; 2.$X/\sim\Rightarrow\sim$ 由结果推方式)
 \begin{proof}
     \quad\\
     (1)$X/\sim$ is a partition of $X$:\\
@@ -299,7 +299,7 @@ We write the \underline{set of equivalence classes}
 \begin{example}[the same as example 4]
     Set $X=\{(a,b)\in \mathbb{Z}^2|b\neq 0 \}$, satisfies $(a,b)\sim(c,d)$ if $ad=bc$. i.e. we write the equivalence of $(a,b)$ as $\frac{a}{b}=[(a,b)]$. Then $X/\sim=\mathbb{Q}$.
 \end{example}
-\subsubsection{Proposition 1.2.12: use $X/\sim=\{[x]|x\in X\}$ to infer $\sim_\pi$ equals to $\sim$.}
+\subsubsection{Proposition 1.2.12: 根据结果$X/\sim=\{[x]|x\in X\}$推断的$\sim_\pi$ equals to $\sim$.}
 \begin{proposition}[Proposition 1.2.12]
     If $\sim$ is an equivalence relation on $X$, define a surjective function $\pi: X \rightarrow	 X/\sim$ by $\pi(x) = [x]$. Then $\sim_\pi=\sim$(the definition of $\sim_f$ in example 6.)
 \end{proposition}
@@ -310,15 +310,15 @@ $X/\sim= \{[x]|x\in X \}=\{\pi(x)|x\in X \}$, so $\forall y\in X/\sim$, $y\in \{
 (2)$\sim_\pi=\sim$\\
 $a\sim_\pi b$ if $\pi(a)=\pi(b) \Leftrightarrow	[a]=[b]$, which is exactly the definition of $\sim$.
 \end{proof}
-%逻辑：\\
+逻辑：\\
 1. Given $\sim$; \\
 2. Get the corresponding $X/\sim=\{[x]|x\in X\}$; \\
 3. $\pi(x) = [x]$; \\
 4. $\sim_\pi:\ a\sim_\pi b$ iff $\pi(a)=\pi(b)$\\
 5. $\sim_\pi=\sim$\\
-%根据结果$X/\sim=\{[x]|x\in X\}$推断的$\sim_\pi$ equals to $\sim$.
+根据结果$X/\sim=\{[x]|x\in X\}$推断的$\sim_\pi$ equals to $\sim$.
 
-%\subsubsection{Proposition 1.2.13: 给$X$标记$Y$: $f$, 给$X/\sim$标记$Y$ : $\tilde{f}$，；两函数之间一一对应}
+\subsubsection{Proposition 1.2.13: 给$X$标记$Y$: $f$, 给$X/\sim$标记$Y$ : $\tilde{f}$，；两函数之间一一对应}
 \begin{proposition}[Proposition 1.2.13]
     Given any function $f:X \rightarrow Y$ there exists a unique function $\tilde{f}:X/\sim \rightarrow Y$ such that $\tilde{f}\circ \pi=f$, where $\pi: X \rightarrow X/\sim$ in proposition 3. Furthermore, $\tilde{f}$ is a bijection onto the image $f(X)$.
 \end{proposition}
@@ -337,7 +337,7 @@ Set any $\tilde{f}'$ s.t. $\tilde{f}'\circ\pi=f$, then $\tilde{f}'[\pi(x)]=\tild
 
 
 
-\section{Permutations}
+\section{Permutations 改变位置}
 \begin{definition}
     Let $X$ be a finite set, a permutation is bijection $\sigma:X \rightarrow X$.
 \end{definition}
@@ -356,7 +356,7 @@ We set $Sym(X)=\{\sigma: X\rightarrow X| \sigma \textit{ is a bijection} \}\subs
 (ii) $id_X\in Sym(X)$, and for all $\sigma \in Sym(X)$, $id_X\circ\sigma=\sigma\circ id_X=\sigma$, and\\
 (iii) For all $\sigma \in Sym(X)$, $\sigma^{-1} \in Sym(X)$.
 \end{proposition}
-%Permutations 类似于 rearrangement，交换$X$中元素的排序。
+Permutations 类似于 rearrangement，交换$X$中元素的排序。
 
 \subsubsection{$S_n$: Permutation group on $n$ elements, $\sigma^i$}
 \begin{note}
@@ -538,15 +538,16 @@ Note: $\sigma_1 \circ \sigma_2\neq\sigma_2 \circ \sigma_1$
 \begin{enumerate}[$\bullet$]
     \item How many permutation $\sigma\in S_{12}$ has cycle structure $(1\ 2\ 3)(4\ 5\ 6)(7\ 8)(9\ 10)(11\ 12)$?
     $$\frac{12!}{3^22^3(2!)(3!)}$$
-    $12!$: Arrange 12 elements in 12 slots.
+    $12!$: 每个位置的排列
 
-    $3^2$: Every cycle with 3 element has 3 forms to represent a same permutation.
+    $3^2$: 每个长度3的cycle的每种情况会被重复计算3次
 
-    $2^3$: Every cycle with 2 element has 2 forms to represent a same permutation.
+    $2^3$: 每个长度2的cycle的每种情况会被重复计算
+    2次
 
-    $(2!)$: Due to the communicative of disjoint permutation, the arrange of cycles with three elements is $2!$ need to be divided.
+    $(2!)$: 2个长度3的cycle具有不同位置的排列
 
-    $(3!)$: Due to the communicative of disjoint permutation, the arrange of cycles with two elements is $3!$ need to be divided.
+    $(3!)$: 3个长度2的cycle具有不同位置的排列
     \item $(1\ 2\ 3)(4\ 5)(6)\in S_6$?
     $$\frac{6!}{3\times 2}=120$$
     \item General situation: $\sigma\in S_n$, $r_i$ category of length $i$, $i=1,2...$
@@ -559,7 +560,7 @@ Note: $\sigma_1 \circ \sigma_2\neq\sigma_2 \circ \sigma_1$
 A \textbf{transposition} is a cycle of length 2: $\sigma=(i\ j)$.
 \end{definition}
 
-\subsubsection{Theorem: Every permutation can be represented by a product of transpositions (not require to be disjoint)}
+\subsubsection{Theorem: 每个permutation可以由若干个（可能不disjoint的）transposition表示}
 \begin{theorem}
     Every permutation $\sigma$ of $X$ is a product of transposition. (the product is not unique)
 
@@ -774,7 +775,7 @@ For $a>0$, let $b=q\cdot a+r$ with $0\leq r<a\leq b$. Then
 \end{equation}
 \end{proof}
 
-\begin{proposition}[second form, second proof]
+\begin{proposition}[第二种表示，第二种证明]
     $\forall a,b\in\mathbb{Z}$, not both 0, $gcd(a,b)$ exists and is the smallest positive integer in the set $M=\{ma+nb|m,n\in\mathbb{Z}\}$. i.e. $\exists m_0,n_0\in\mathbb{Z}$ s.t. $gcd(a,b)=m_0a+n_0b$.
 \end{proposition}
 
@@ -1004,7 +1005,7 @@ Write $x=11k+1$. Substitute in $x\equiv 9 \text{ mod }13$:
 Then $x=11k+1=100$.
 
 \subsection{Congruence Classes: $[a]_n=\{a+kn|k\in\mathbb{Z} \}$}
-%将给定$n$，相同余数的数分为一组\\
+将给定$n$，相同余数的数分为一组\\
 Fix $n\in\mathbb{Z}_+$, we call $[a]_{n}=[a]$ the \underline{\textbf{congruence class}} of a modulo n.
 \begin{equation}
     \begin{aligned}
@@ -1049,7 +1050,7 @@ This is well defined, follows Lemma 1.5.3.
 
 \end{proof}
 \subsubsection{Units(i.e. invertible) in Congruence Classes}
-%将与$n$互质的数分为一组\\
+将与$n$互质的数分为一组\\
 Say $[a] \in \mathbb{Z}_n$ is a \textbf{unit} or is \textbf{invertible} if $\exists [b] \in \mathbb{Z}_n$ so that $[a][b] = [1]$.
 \subsubsection{Proposition 1.5.6: Set of units in congruence classes: $\mathbb{Z}_n^{\times}=\{[a]\in\mathbb{Z}_n|[a] \textit{ is a unit}\}=\{[a]\in\mathbb{Z}_n|gcd(a,n)=1\}$}
 The set of \textbf{invertible} elements in $\mathbb{Z}_n$ will be denoted $\mathbb{Z}_n^{\times}=\{[a]\in\mathbb{Z}_n|[a] \textit{ is a unit}\}$.
@@ -1275,7 +1276,7 @@ If $H\neq\{e\}$, then $H$ is a nontrivial subgroup.
 
 
 \subsubsection{Proposition 2.6.8: $H<G$, $(H,*)$ is a group: A group's operation with its any subgroup is also a group}
-%不同的definition.
+不同的definition.
 \begin{proposition}[Proposition 2.6.8]
     If $(G, *)$ is a group, $H \subset G$ is a subgroup, then $(H, *)$ is a group.
 \end{proposition}
@@ -1304,7 +1305,7 @@ If $\mathbb{F}$ is a field, $Aut(\mathbb{F})=\{\sigma:\mathbb{F}\rightarrow	\mat
 \begin{example}
     Dihedral Groups:
 \end{example}
-%保留多边形\\
+保留多边形\\
 Let $P_n\subset \mathbb{R}^2$ be a regular $n-gon$
 \begin{center}\begin{figure}[htbp]
     \centering
@@ -1326,7 +1327,7 @@ $D_n<Isom(\mathbb{R}^2)$, $D_n=\{\Phi \in Isom(\mathbb{R}^2)|\Phi(P_n)=P_n\}$
 
 
 \subsection{Power of an Element}
-We define $g^n$ recursively for $n \geq 0$ by setting $g^0 = e$ and for $n\geq 1$, we set $g^n = g^{n-1} * g$. For $n \leq 0$, we define $g^n = (g^{-1})^{-n}$.
+We define $g^n$ recursively for $n \geq 0$ by setting $g^0 = e$ and for $n\geq 1$, we set $g^n = g^{n−1} * g$. For $n \leq 0$, we define $g^n = (g^{−1})^{-n}$.
 \begin{proposition}[Proposition 3.1.5]
 (1) $g^n*g^m=g^{n+m}$; (2) $(g^n)^m=g^{nm}$
 \end{proposition}
@@ -2117,6 +2118,19 @@ In general, for a group $G$ act on the set $X$, the homomorphism $\phi:G \righta
     \item $G\times G/H \rightarrow G/H$, $(g,aH)\rightarrow gaH$ (when $H$ is not normal, $X=G/H$ is just a set.)
 \end{enumerate}
 
+\subsubsection{Thm: if $X$ is a $G$-set, $G_x=\{g\in G\vert gx=x\}$ is subgroup of $G$, $\forall x\in X$}
+Let $$X_g=\{x\in X\vert gx=x\};\ G_x=\{g\in G\vert gx=x\}$$
+\begin{theorem}
+    Let $X$ be a $G$-set then $G_x$ is a subgroup of $G$, $\forall x\in X$.
+\end{theorem}
+\begin{proof}\quad
+\begin{enumerate}[(1)]
+    \item Closed: $\forall g_1,g_2\in G_x$, $(g_1g_2)x=g_1(g_2x)=g_1x=x \Rightarrow g_1g_2\in G_x$.
+    \item Identity: $ex=x$.
+    \item Inverse: $gx=x$, $x=ex=g^{-1}gx=g^{-1}(gx)=g^{-1}x$.
+\end{enumerate}
+\end{proof}
+
 \subsection{Orbits}
 \subsubsection{Thm: Equivalence Relation: $X$ is a $G$-set, $x_1\sim x_2 \Leftrightarrow x_2=gx_1,\ \exists g\in G$}
 \begin{theorem}
@@ -2140,63 +2154,28 @@ $r$ disjoint orbits.
     Let $G$ act on $X$, for $x\in X$, define $G_x=\{g\in G|gx=x\}$, then $G_x$ is a subgroup of $G$ called the \textbf{stabilizer} of $x$. (or the \textbf{isotropy subgroup} of $x$)
 \end{definition}
 
-\subsubsection{Thm: if $X$ is a $G$-set, stabilizer $G_x=\{g\in G\vert gx=x\}$ is subgroup of $G$, $\forall x\in X$}
-Let $$X^g=\{x\in X\vert gx=x\};\ G_x=\{g\in G\vert gx=x\}$$
-\begin{theorem}
-    Let $X$ be a $G$-set then $G_x$ is a subgroup of $G$, $\forall x\in X$.
-\end{theorem}
-\begin{proof}\quad
-\begin{enumerate}[(1)]
-    \item Closed: $\forall g_1,g_2\in G_x$, $(g_1g_2)x=g_1(g_2x)=g_1x=x \Rightarrow g_1g_2\in G_x$.
-    \item Identity: $ex=x$.
-    \item Inverse: $gx=x$, $x=ex=g^{-1}gx=g^{-1}(gx)=g^{-1}x$.
-\end{enumerate}
-\end{proof}
-
-\subsubsection{Orbit-Stabilizer Theorem: $|Gx|=\frac{|G|}{|G_x|}$}
+\subsubsection{Orbit-Stabilizer Theorem}
 \begin{theorem}
     Let $G$ act on $X$, and let $x\in X$, then $|Gx|=[G:G_x]=|G/G_x|=\frac{|G|}{|G_x|}$
 \end{theorem}
-\begin{proof}
-    Since $G_x$ is the subgroup of $G$, according to largrange theorem we know $|G_x|\bigg||G|$.
+\begin{example}
 
-    For a $x_1=g_1x\in Gx$ with $g_1\notin G_x=\{g\in G\vert gx=x\}$. $G_{x_1}=\{g\in G\vert gx_1=x_1\}=\{g\in G\vert {g_1^{-1}gg_1}x=x\}$.
-    
-    Prove $g \rightarrow g_1^{-1}gg_1$ is one to one: assume $g_1^{-1}gg_1=g_1^{-1}g'g_1$, $\Rightarrow	g=g'$.
-    
-    Hence, $|G_{x_1}|=|G_x| \Rightarrow	\frac{|G|}{|G_x|}=|Gx|$
-\end{proof}
-
+\end{example}
 
 
 
 
 \subsection{Applications of $G-$sets to Counting}
-As we showed before, the partition of $X$ as equivalence classes takes the form $$X=Gx_1\cup Gx_2\cup \cdots Gx_r$$
-where $r$ is the number of orbits in $X$.
-\subsubsection{Burnside's Formula: number of orbits in $X$: $r=\frac{1}{|G|}\sum_{g\in G}|X^g|$}
+\subsubsection{Thm: Burnside's Formula: number of orbits $r=\frac{1}{|G|}\sum_{g\in G}|X^g|$}
 \begin{theorem}
     Let $G$ be a finite group and $X$ a finite $G$-set. If $r$ is the number
     of orbits in $X$ under $G$, then $$r=\frac{1}{|G|}\sum_{g\in G}|X^g|$$ i.e. $r$ equals to the average $|X^g|$, where $X^g=\{x:gx=x\}$
 \end{theorem}
 \begin{proof}
-    Since $G_{x_0}=\{g\in G\vert gx=x\}=\{(g,x)\vert gx=x,g\in G,x=x_0\}$,$$\sum_{x\in X}|G_x|=|\{(g,x)\vert gx=x,g\in G,x\in X\}|$$
-    At the same time, $|X^{g_0}|=\{x\in X:gx=x\}=\{(g,x)\vert gx=x,g=g_0,x\in X\}$, then
-    $$\sum_{g\in G}|X^g|=|\{(g,x)\vert gx=x,g\in G,x\in X\}|=\sum_{x\in X}|G_x|$$
-    As we shoed before, $|G_{x}|=|G_{y}|,\forall x,y\in X$
-    \begin{equation}
-        \begin{aligned}
-            \Rightarrow \sum_{x\in X}|G_x|=|G|\sum_{x\in X}\frac{1}{|Gx|}=|G|\sum_{i=1}^r\sum_{x\in Gx_i}\frac{1}{|Gx|}=|G|\sum_{i=1}^r\frac{|Gx_i|}{|Gx_i|}=|G|r\\
-            \Rightarrow r=\frac{\sum_{x\in X}|G_x|}{|G|}=\frac{\sum_{g\in G}|X^g|}{|G|}
-        \end{aligned}
-        \nonumber
-    \end{equation}
+
 \end{proof}
 
-\subsubsection{Example: Counting}
-\begin{example}
 
-\end{example}
 
 
 
@@ -2960,12 +2939,11 @@ Obviously, $deg(f)=0\Rightarrow\ f$ is a unit.\\
 Suppose $f$ is a unit, i.e. $\exists g\in\mathbb{F}[x]$ s.t. $fg=1$.\\
 $0=deg(fg)=deg(f)+deg(g)\Rightarrow deg(f),deg(g)\geq0\Rightarrow deg(f)=0,deg(g)=0.$
 \end{proof}
-\subsection{\underline{Irreducible} Polynomials:}
-%“无法分解为两个$degree\geq1$的多项式积”的多项式: 至少一个是constant (i.e. $degree=0$)
+\subsection{\underline{Irreducible} Polynomials: “无法分解为两个$degree\geq1$的多项式积”的多项式: 至少一个是constant (i.e. $degree=0$)}
 A nonconstant polynomial $f$ is \underline{irreducible} if $f=uv,\ u,v\in\mathbb{F}[x]$, then either $u$ or $v$ is a unit(i.e., constant$\neq0$)
 
 
-\subsection{Theorem 2.3.6: nonconstant polynomials can be reduced uniquely}
+\subsection{Theorem 2.3.6：nonconstant polynomials可以被唯一地分解}
 \begin{theorem}[Theorem 2.3.6]
 Suppose $\mathbb{F}$ is a field and $f\in\mathbb{F}[x]$ is any nonconstant. Then $f = ap_1p_2\dots p_k$ where $a \in \mathbb{F},\ p_1,\dots p_k \in \mathbb{F}[x]$ are irreducible \underline{monic} polynomials (monic = i.e. leading coeff. 1). If $f = bq_1q_2\dots q_r$ with $b \in \mathbb{F}$ and
 $q_1,q_2,\dots ,q_r \in \mathbb{F}[x]$ monic irreducible, then $a = b, k = r$, and after reindexing $p_i = q_i,\ \forall i$
@@ -3029,15 +3007,14 @@ the $gcd$ is not unique, but the monic $gcd$ is unique. We call it \textbf{the m
 \begin{example}
 \begin{equation}
     \begin{aligned}
-        &f = 3x^3 - 5x^2 - 3x + 5, g = x^3 - 2x^2 + 1 \in \mathbb{Q}[x]\\
+        &f = 3x^3 - 5x^2 - 3x + 5, g = x^3 − 2x^2 + 1 \in \mathbb{Q}[x]\\
         &f=3g+x^2-3x+2
     \end{aligned}
     \nonumber
 \end{equation}
 \end{example}
 
-\subsubsection{Proposition 2.3.10:}
-%$gcd(f,g)$ 是degree最小的f,g的线性组合
+\subsubsection{Proposition 2.3.10: $gcd(f,g)$ 是degree最小的f,g的线性组合}
 \begin{proposition}[Proposition 2.3.10]
     Any 2 nonzero polynomials $f , g \in \mathbb{F}[x]$ have
     a gcd in $\mathbb{F}[x]$. In fact among all polynomials
@@ -3053,7 +3030,7 @@ Suppose $h'\in M$ is any nonzero element. $deg(h')\geq deg(h)\Rightarrow\ \exist
 \begin{example}
     \begin{equation}
         \begin{aligned}
-            &f = 3x^3 - 5x^2 - 3x + 5, g = x^3-2x^2 + 1 \in \mathbb{Q}[x]\\
+            &f = 3x^3 - 5x^2 - 3x + 5, g = x^3 − 2x^2 + 1 \in \mathbb{Q}[x]\\
             &f=3g+x^2-3x+2\\
             &g=(x+1)(x^2-3x+2)+x-1\\
             &x^2-3x+2=(x-2)(x-1)\\
@@ -3095,7 +3072,7 @@ Since $f$ is irreducible, we have two possible situations:\\
 \subsection{Roots}
 \underline{Root}:$\alpha\in\mathbb{F}$ is a root of $f$ if $f(\alpha)=0$.
 
-\subsubsection{Corollary 2.3.16(of Euclidean Algorithm): $f$ can be divided into $(x-\alpha)q+f(\alpha)$i.e. if $\alpha$ is a root, then $(x-\alpha)|f$}
+\subsubsection{Corollary 2.3.16(of Euclidean Algorithm): $f$ 可被分为 $(x-\alpha)q+f(\alpha)$i.e. if $\alpha$ is a root, then $(x-\alpha)|f$}
 \begin{corollary}[Corollary 2.3.16(of Euclidean Algorithm)]
 $\forall f\in\mathbb{F}[x]$ and $\alpha\in\mathbb{F}$, there exists a polynomial $q\in\mathbb{F}[x]$ s.t. $f=(x-\alpha)q+f(\alpha)$. In particular , if $\alpha$ is a root, then $(x-\alpha)|f$.
 \end{corollary}
@@ -3171,8 +3148,7 @@ for all $a \in \mathbb{F}$ and $v,w \in V$ , we have
     from $\{v_1,...,v_n\}\rightarrow W$ extends \textit{uniquely} to a linear transformation $V \rightarrow W$.
 \end{proposition}
 Any $v\in V$, $\exists (a_1,...,a_n)$ s.t. $v=a_1 v_1+...+a_n v_n$. Then $T(v)=T(a_1 v_1+...+a_n v_n)=a_1T(v_1)+...+a_nT(v_n)$\\
-\subsubsection{Corollary 2.4.16: \textit{bijection} $\mathcal{L} (V,M)\rightarrow M_{m\times n}(\mathbb{F})$}
-%一个线性变换对应一个矩阵
+\subsubsection{Corollary 2.4.16: 一个线性变换对应一个矩阵 \textit{bijection} $\mathcal{L} (V,M)\rightarrow M_{m\times n}(\mathbb{F})$}
 \begin{corollary}[Corollary 2.4.16.]
     If $v_1,...,v_n$ is a basis for a vector space $V$ and $w_1,...,w_n$ is a basis for a vector space $W$ (both over $\mathbb{F}$), then any linear transformation $T : V \rightarrow W$ determines (and is determined by) the $m\times n$ matrix:
     \begin{equation}
@@ -3200,8 +3176,7 @@ Any $v\in V$, $\exists (a_1,...,a_n)$ s.t. $v=a_1 v_1+...+a_n v_n$. Then $T(v)=T
 \end{equation}
 $\mathcal{L} (V,M)$ denotes the set of all linear transformations from $V$ to $W$; $M_{m\times n}(\mathbb{F})$ the set of $m\times n$ matrix with entries in $\mathbb{F}$. $T\rightarrow A(T)$ defines a \textit{bijection} $\mathcal{L} (V,M)\rightarrow M_{m\times n}(\mathbb{F})$. \textbf{$A(T)$ represents the linear transformation $T$}.
 
-\subsubsection{Proposition 2.4.19: }
-%线性变换矩阵相乘仍为线性变换矩阵
+\subsubsection{Proposition 2.4.19: 线性变换矩阵相乘仍为线性变换矩阵}
 \begin{proposition}[Proposition 2.4.19]
     Suppose that $V$ , $W$, and $U$ are vector spaces over $\mathbb{F}$, with fixed chosen bases. If
     $T : V \rightarrow W$ and $S : W \rightarrow U$ are linear transformations represented by matrices $A = A(T)$ and $B = B(S)$,
@@ -3425,7 +3400,7 @@ Supose a nonconstant polynomial $f(x)=a_0+a_1x+...+a_nx^n$ with coefficients $a_
     polynomial $a_0, a_1, ..., a_n \in \mathbb{R}, a_n \neq 0$.
     Then $f$ can be expresses as a product of linear and quadratic polynomials.
 \end{corollary}
-$a_0, a_1, ..., a_n$ is real number here!
+这里$a_0, a_1, ..., a_n$是实数！
 \begin{proof}
 \quad\\
 (1)Obviously, the corollary holds at $n=1$ and $n=2$.\\
