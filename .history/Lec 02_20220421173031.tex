@@ -397,11 +397,10 @@ We could represent $\tau_1=(1\ 5\ 2)=(5\ 2\ 1)=(2\ 1\ 5)$, i.e.
 \end{tikzpicture}
 Similarly, we can represent $\tau_2=(3,4)=(4,3)$, i.e.
 \begin{tikzpicture}[domain=0:3.25]
-    \draw[<->](0,0)--(1,0) node[below] {};
+    \draw[<->](0,0)--(1,0) node[below] {$$};
     \node[left] at (0,0) {$3$};
     \node[right] at (1,0) {$4$};
-\end{tikzpicture}
-
+\end{tikzpicture}\\
 We can find that $\forall x\in \{1,2,3,4,5\}$, $\tau_1^{3}(x)=x, \tau_2^{2}(x)=x$, so we write $\tau_1$ as a \textbf{3-cycle} in $S_5$, $\tau_2$ as a \textbf{2-cycle} in $S_5$.\\
 
 Given $k \geq 2$, a \textbf{k-cycle} in $S_n$ is a permutation $\sigma$ with the property that $\{1,...,n\}$ is the union of two disjoint subsets, $\{1,...,n\}=Y \cup Z $ and $Y \cap Z =\emptyset$, such that\\
@@ -2544,125 +2543,6 @@ Moreover, $IJ=I\cap J$ and $R/_{IJ} \cong R/_I\times R/_J$
 
 \section{Prime and Maximal Ideals}
 Every nonzero ring $R$ has at least two ideals, the \textbf{improper ideal} $R$ and the \textbf{trivial ideal} $\{0\}$. For these ideals, the factor rings are $R/R$, which has only one element, and $R/\{0\}$, which is isomorphic to $R$. These are uninteresting cases. Let's consider \textbf{proper nontrivial ideal} $N\subset R$.
-
-\subsection{Thm: $N$ is $R$-ideal has a unit $\Rightarrow$ $N=R$}
-\begin{theorem}
-    If $R$ is a ring with $1$, and $N$ is an ideal of $R$ containing a unit, then $N = R$.
-\end{theorem}
-\begin{proof}
-    Since $N$ is ideal, $rN\subseteq N,\forall r\in R$. $r^{-1}\in N \Rightarrow 1\in N \Rightarrow	r\cdot 1\in N, \forall r\in R \Rightarrow N=R$
-\end{proof}
-
-\subsubsection{Cor: Ideal of field $F$ is $\{0\}$ or $F$}
-\begin{corollary}
-    A field $F$ contains no proper nontrivial ideals, i.e., ideal is $\{0\}$ or $F$.
-\end{corollary}
-\begin{proof}
-    Every nonzero element of field is unit.
-\end{proof}
-
-\subsection{Def: Maximal ideal: no other ideal properly contains it}
-\begin{definition}
-    A proper ideal $M\subsetneq R$ is called \textbf{maximal} if
-    \begin{center}
-        $M\subseteq I\subseteq R \Rightarrow$ $M=I$ or $I=R$ (for $R-$ideal I).
-    \end{center}
-    i.e, there is no other ideal properly containing $M$.
-\end{definition}
-
-\subsubsection{Thm: $R$ comm ring with $1$, $M$ maximal ideal $\Leftrightarrow$ $R/M$ is a field}
-\begin{theorem}
-    Let $R$ be a commutative ring with $1\neq 0$. Then $M$ is a maximal ideal of $R$ \underline{if and only if} $R/M$ is a field.
-\end{theorem}
-\begin{example}
-    Since $\mathbb{Z}/n \mathbb{Z}$ is isomorphic to $\mathbb{Z}_n$ and $\mathbb{Z}_n$ is a field if and only if $n$ is prime. Then we see that \underline{maximal ideals are $p \mathbb{Z}$ where $p$ is any positive prime}.
-\end{example}
-\begin{example}
-    Let $R=\mathbb{Z}[x]$ has ideals $(2)=2 \mathbb{Z}[x]\subseteq R$, $(x)=x \mathbb{Z}[x]\subseteq R$, $(2,x)=2\mathbb{Z}[x]+x\mathbb{Z}[x]\subseteq R$
-    \begin{enumerate}[$(1)$]
-        \item $R/(2) \cong \mathbb{Z}_2[x]$, $\mathbb{Z}_2[x]$ is not a field $\Rightarrow$ $(2)$ is not maximal ideal.
-        \item $R/(x) \cong \mathbb{Z}$, $\mathbb{Z}$ is not a field $\Rightarrow$ $(x)$ is not maximal ideal.
-        \item $R/(2,x) \cong \mathbb{Z}_2$, $\mathbb{Z}_2$ is a field $\Rightarrow$ $(2,x)$ is maximal ideal.
-    \end{enumerate}
-\end{example}
-
-\subsection{Def: Prime ideal: $ab\in P \Rightarrow $ $a\in P$ or $b\in P$}
-\begin{definition}
-    An ideal $P\subsetneq R$ in a commutative ring $R$ is a \textbf{prime} ideal if $ab\in P \Rightarrow $ $a\in P$ or $b\in P$.
-\end{definition}
-\underline{Note:} $\{0\}$ is a prime ideal in $\mathbb{Z}$, and indeed in any integral domain.
-
-\begin{example}
-    $\mathbb{Z}\times \{0\}$ is a prime ideal of $\mathbb{Z}\times \mathbb{Z}$, for if $(a,b)(c,d)\in \mathbb{Z}\times \{0\}$, then we must have $bd=0$, then either $(a,b)\in \mathbb{Z}\times \{0\}$ or $(c,d)\in \mathbb{Z}\times \{0\}$
-\end{example}
-
-\subsubsection{Thm: $N$ prime ideal $\Leftrightarrow$ $R/N$ is an integral domain}
-\begin{theorem}
-    Let $R$ be a commutative ring with $1$, and let $N\subsetneq R$ be an ideal in $R$. Then $R/N$ is an integral domain \underline{if and only if} $N$ is a prime ideal in $R$.
-\end{theorem}
-
-\subsubsection{Cor: maximal ideal $\Rightarrow$ prime ideal}
-\begin{corollary}
-    Every maximal ideal in a commutative ring $R$ with $1$ is a prime ideal.
-\end{corollary}
-
-\subsection{Relation Summary}
-\begin{center}
-    \fcolorbox{black}{gray!10}{\parbox{.9\linewidth}{\begin{equation}
-        \begin{aligned}
-            &I\text{ is maximal}&\Leftrightarrow\quad  &R/I\text{ is a field}&\\
-            &\Downarrow & & \Downarrow&\\
-            &I\text{ is prime}&\Leftrightarrow\quad  &R/I\text{ is an integral domain}&
-        \end{aligned}
-        \nonumber
-    \end{equation}}}
-\end{center}
-
-\subsection{Thm: homomorphism $\phi:\mathbb{Z} \rightarrow R$, $\phi(n)=n\cdot 1$}
-\begin{theorem}
-    If $R$ is a ring with unity $1$, then the map $\phi:\mathbb{Z} \rightarrow R$ given by
-    $$\phi(n)=n\cdot 1$$
-    for $n\in \mathbb{Z}$ is a homomorphism of $\mathbb{Z}$ into $R$.
-\end{theorem}
-\subsubsection{Cor: Ring $R$ 1. characteristic $n > 1$ $\Rightarrow$ has subring isomorphic
-to $\mathbb{Z}_n$ 2. characteristic $0$ $\Rightarrow$ has subring isomorphic
-to $\mathbb{Z}$}
-\begin{corollary}
-    If $R$ is a ring with 1 and characteristic $n > 1$, then $R$ contains a subring isomorphic
-    to $\mathbb{Z}_n$. If $R$ has characteristic $0$, then $R$ contains a subring isomorphic to $\mathbb{Z}$.
-\end{corollary}
-Review: \underline{Characteristic} $n$ is the least positive integer s.t. $n\cdot a=0,\forall a\in R$
-
-\subsubsection{Thm: Field $F$ 1. prime characteristic $p$ $\Rightarrow$ has subfield isomorphic to $\mathbb{Z}_p$ 2. characteristic $0$ $\Rightarrow$ has subfield isomorphic
-to $\mathbb{Q}$}
-\begin{theorem}
-    A field $F$ is either of prime characteristic p and contains a subfield isomorphic to $\mathbb{Z}_p$ or of characteristic $0$ and contains a subfield isomorphic to $\mathbb{Q}$.
-\end{theorem}
-
-\begin{definition}
-    We define $\mathbb{Z}_p$ and $\mathbb{Q}$ are prime fields.
-\end{definition}
-
-\subsection{Def: Pricipal ideal (of comm ring $R$) generated by $a$: $\left\langle a\right\rangle=\{ra|r\in R\}$}
-\begin{definition}
-    If $R$ is a commutative ring with $1$ and $a\in R$, the ideal $\{ra\vert r\in R\}$ of all multiples of $a$ is the \textbf{principal ideal generated by} $a$ and is denoted by $\left\langle a\right\rangle$. An ideal $N$ of $R$ is a \textbf{principal ideal} if $N=\left\langle a\right\rangle$ for some $a\in R$.
-\end{definition}
-\begin{example}
-    Every ideal of the ring $\mathbb{Z}$ is of the form $n \mathbb{Z}$, which is generated by $n$, so every ideal of $\mathbb{Z}$ is a principal ideal.
-\end{example}
-
-\begin{example}
-    The ideal $\left\langle x\right\rangle$ in $F[x]$ consists of all polynomials in $F[x]$ having zero constant term.
-\end{example}
-
-\subsubsection{Thm: field $F$, every ideal in $F[x]$ is principal}
-\begin{theorem}
-    If $F$ is a field, every ideal in $F[x]$ is principal.
-\end{theorem}
-
-
-
-
 
 
 
