@@ -138,127 +138,129 @@
 \contentsline {subsection}{\numberline {6.18}Applications of $G-$sets to Counting}{43}{subsection.6.18}%
 \contentsline {subsubsection}{\numberline {6.18.1}Burnside's Formula: number of orbits in $X$: $r=\frac {1}{|G|}\DOTSB \sum@ \slimits@ _{g\in G}|X^g|$}{43}{subsubsection.6.18.1}%
 \contentsline {subsubsection}{\numberline {6.18.2}Example: Counting}{43}{subsubsection.6.18.2}%
-\contentsline {section}{\numberline {7}Ring and Field}{43}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Ring $(R,+,\cdot )$: $+$ is associative, commutative, identity, inverse $\in R$; $\cdot $ is associative, distributes over $+$}{43}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Def, Prop}{43}{subsubsection.7.1.1}%
+\contentsline {section}{\numberline {7}Ring and Field}{44}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Ring $(R,+,\cdot )$: $+$ is associative, commutative, identity, inverse $\in R$; $\cdot $ is associative, distributes over $+$}{44}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Def, Prop}{44}{subsubsection.7.1.1}%
 \contentsline {subsubsection}{\numberline {7.1.2}$S\subset R$: Subring (closed under $+$ and $\cdot $; addictive inverse $-a\in S$)}{44}{subsubsection.7.1.2}%
 \contentsline {subsubsection}{\numberline {7.1.3}Def: Commutative ring: ring's $\cdot $ is commutative}{44}{subsubsection.7.1.3}%
 \contentsline {subsubsection}{\numberline {7.1.4}Def: A ring with 1: the ring exists multiplication identity $1\in R$}{44}{subsubsection.7.1.4}%
 \contentsline {subsubsection}{\numberline {7.1.5}Def: In a ring $R$ with $1$, $u$ is a \underline {unit} if $\exists v\in R$ s.t. $uv=vu=1$}{44}{subsubsection.7.1.5}%
-\contentsline {subsubsection}{\numberline {7.1.6}Def: A ring with $1$, $R$ is a \underline {division ring} if every nonzero element of $R$ is a unit}{44}{subsubsection.7.1.6}%
-\contentsline {subsubsection}{\numberline {7.1.7}Def: Ring Homomorphism: $\phi (a+b)=\phi (a)+\phi (b)$, $\phi (ab)=\phi (a)\phi (b)$}{44}{subsubsection.7.1.7}%
-\contentsline {subsubsection}{\numberline {7.1.8}Def: \underline {zero divisor}: a $a\neq 0\in R$ if $\exists b\neq 0\in R$ s.t. $ba=0$ or $ab=0$}{44}{subsubsection.7.1.8}%
-\contentsline {subsubsection}{\numberline {7.1.9}Remark: In $\mathbb {Z}_n$, an element is either $0$ or unit or zero divisor}{44}{subsubsection.7.1.9}%
-\contentsline {subsubsection}{\numberline {7.1.10}Thm: $a\in \mathbb {Z}_n$ is a zero divisor $\Leftrightarrow gcd(a,n)\neq 1$.}{44}{subsubsection.7.1.10}%
+\contentsline {subsubsection}{\numberline {7.1.6}Def: A ring with $1$, $R$ is a \underline {division ring} if every nonzero element of $R$ is a unit}{45}{subsubsection.7.1.6}%
+\contentsline {subsubsection}{\numberline {7.1.7}Def: Ring Homomorphism: $\phi (a+b)=\phi (a)+\phi (b)$, $\phi (ab)=\phi (a)\phi (b)$}{45}{subsubsection.7.1.7}%
+\contentsline {subsubsection}{\numberline {7.1.8}Def: \underline {zero divisor}: a $a\neq 0\in R$ if $\exists b\neq 0\in R$ s.t. $ba=0$ or $ab=0$}{45}{subsubsection.7.1.8}%
+\contentsline {subsubsection}{\numberline {7.1.9}Remark: In $\mathbb {Z}_n$, an element is either $0$ or unit or zero divisor}{45}{subsubsection.7.1.9}%
+\contentsline {subsubsection}{\numberline {7.1.10}Thm: $a\in \mathbb {Z}_n$ is a zero divisor $\Leftrightarrow gcd(a,n)\neq 1$.}{45}{subsubsection.7.1.10}%
 \contentsline {subsubsection}{\numberline {7.1.11}Cor: $\mathbb {Z}_p$ has no zero divisors if $p$ is prime.}{45}{subsubsection.7.1.11}%
 \contentsline {subsubsection}{\numberline {7.1.12}Def: An \underline {integral domain } is a commutative ring with $1\neq 0$ that has no zero divisors}{45}{subsubsection.7.1.12}%
 \contentsline {subsection}{\numberline {7.2}Field $\mathbb {F}$}{45}{subsection.7.2}%
 \contentsline {subsubsection}{\numberline {7.2.1}Def: A \underline {field} is a commutative division ring.}{45}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Differences between "Field" and "Integral Domain"}{45}{subsubsection.7.2.2}%
-\contentsline {subsubsection}{\numberline {7.2.3}Lemma: A unit is not zero divisor}{45}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.2}Differences between "Field" and "Integral Domain"}{46}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Lemma: A unit is not zero divisor}{46}{subsubsection.7.2.3}%
 \contentsline {subsubsection}{\numberline {7.2.4}Lemma: A field doesn't has zero divisors}{46}{subsubsection.7.2.4}%
-\contentsline {subsubsection}{\numberline {7.2.5}Thm: Every field is an integral domain}{46}{subsubsection.7.2.5}%
-\contentsline {subsubsection}{\numberline {7.2.6}Thm: Every finite integral domain is a field}{46}{subsubsection.7.2.6}%
-\contentsline {subsubsection}{\numberline {7.2.7}Note: Finite Integral Domain $\subset $ Field $\subset $ Integral Domain}{46}{subsubsection.7.2.7}%
-\contentsline {subsection}{\numberline {7.3}The Characteristic of a Ring}{46}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Def: characteristic $n$ is the least positive integer s.t. $n\cdot a=0,\forall a\in R$}{46}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Thm: In a ring with $1$, characteristic $n\in \mathbb {Z}^+$ s.t. $n\cdot 1=0$}{46}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.2.5}Thm: Every field is an integral domain}{47}{subsubsection.7.2.5}%
+\contentsline {subsubsection}{\numberline {7.2.6}Thm: Every finite integral domain is a field}{47}{subsubsection.7.2.6}%
+\contentsline {subsubsection}{\numberline {7.2.7}Note: Finite Integral Domain $\subset $ Field $\subset $ Integral Domain}{47}{subsubsection.7.2.7}%
+\contentsline {subsection}{\numberline {7.3}The Characteristic of a Ring}{47}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Def: characteristic $n$ is the least positive integer s.t. $n\cdot a=0,\forall a\in R$}{47}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Thm: In a ring with $1$, characteristic $n\in \mathbb {Z}^+$ s.t. $n\cdot 1=0$}{47}{subsubsection.7.3.2}%
 \contentsline {section}{\numberline {8}The Ring $\mathbb {Z}_n$ (Fermat's and Euler's Theorems)}{47}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Fermat's Theorem}{47}{subsection.8.1}%
 \contentsline {subsubsection}{\numberline {8.1.1}Thm: nonzero elements in $\mathbb {Z}_p$ ($p$ is prime) form a group under multiplication}{47}{subsubsection.8.1.1}%
 \contentsline {subsubsection}{\numberline {8.1.2}Cor: (Little Theorem of Fermat) $a\in \mathbb {Z}$ and $p$ is prime not dividing $a$, then $a^{p-1}\equiv 1 \text { mod } p$ ($p$ divides $a^{p-1}-1$)}{47}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Cor: (Little Theorem of Fermat) If $a\in \mathbb {Z}$, then $a^p\equiv a \text { mod }p$ for any prime $p$}{47}{subsubsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.2}Euler's Theorem}{47}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Thm: $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$ forms a group under multiplication}{47}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Def: \underline {Euler phi function} $\phi (n)=|G_n|$, where $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$}{47}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Thm: (Euler's Theorem) If $a\in \mathbb {Z}$, $n\geq 2$ s.t. $gcd(a,n)=1$ then $a^{\phi (n)}\equiv 1 \text { mod }n$}{47}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.1.3}Cor: (Little Theorem of Fermat) If $a\in \mathbb {Z}$, then $a^p\equiv a \text { mod }p$ for any prime $p$}{48}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Euler's Theorem}{48}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Thm: $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$ forms a group under multiplication}{48}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Def: \underline {Euler phi function} $\phi (n)=|G_n|$, where $G_n=\{a\in \mathbb {Z}_n: gcd(a,n)=1\}$}{48}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Thm: (Euler's Theorem) If $a\in \mathbb {Z}$, $n\geq 2$ s.t. $gcd(a,n)=1$ then $a^{\phi (n)}\equiv 1 \text { mod }n$}{48}{subsubsection.8.2.3}%
 \contentsline {subsection}{\numberline {8.3}Application to $ax \equiv b$ (mod $m$)}{48}{subsection.8.3}%
 \contentsline {subsubsection}{\numberline {8.3.1}Thm: find solution of $ax \equiv b$ (mod $m$), $gcd(a,m)=1$}{48}{subsubsection.8.3.1}%
 \contentsline {subsubsection}{\numberline {8.3.2}Thm: $ax \equiv b$ (mod $m$), $d=gcd(a,m)$ has solutions if $d|b$, the number of solutions is $d$}{48}{subsubsection.8.3.2}%
-\contentsline {subsubsection}{\numberline {8.3.3}Cor: $ax \equiv b$ (mod $m$), $d=gcd(a,m)$, $d|b$, then solutions are $((\frac {a}{d})^{\phi (\frac {m}{d})-1}\frac {b}{d}+k\frac {m}{d})+(m \mathbb {Z}),\hskip 1em\relax k=0,1,...,d-1$}{48}{subsubsection.8.3.3}%
-\contentsline {section}{\numberline {9}Ring Homomorphisms and Factor Rings}{48}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Ring Homomorphism}{48}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Def: Ring Homomorphism: $\phi (a+b)=\phi (a)+\phi (b)$, $\phi (ab)=\phi (a)\phi (b)$}{48}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {8.3.3}Cor: $ax \equiv b$ (mod $m$), $d=gcd(a,m)$, $d|b$, then solutions are $((\frac {a}{d})^{\phi (\frac {m}{d})-1}\frac {b}{d}+k\frac {m}{d})+(m \mathbb {Z}),\hskip 1em\relax k=0,1,...,d-1$}{49}{subsubsection.8.3.3}%
+\contentsline {section}{\numberline {9}Ring Homomorphisms and Factor Rings}{49}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Ring Homomorphism}{49}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Def: Ring Homomorphism: $\phi (a+b)=\phi (a)+\phi (b)$, $\phi (ab)=\phi (a)\phi (b)$}{49}{subsubsection.9.1.1}%
 \contentsline {subsubsection}{\numberline {9.1.2}Properties of Ring Homomorphism}{49}{subsubsection.9.1.2}%
 \contentsline {subsubsection}{\numberline {9.1.3}Def: kernel of ring homomorphism (the same as group homomorphism)}{49}{subsubsection.9.1.3}%
-\contentsline {subsubsection}{\numberline {9.1.4}Thm: one-to-one map $\Leftrightarrow $ $Ker(\phi )=\{0\}$}{49}{subsubsection.9.1.4}%
-\contentsline {subsection}{\numberline {9.2}Factor(Quotient) Rings}{49}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}Thm: Homomorphism $\phi :R \rightarrow R/H$; Isomorphism: $\mu : R/H \rightarrow \phi (R)$}{49}{subsubsection.9.2.1}%
-\contentsline {subsubsection}{\numberline {9.2.2}Def: $N< R$ is ideal $aN\subseteq N$ and $Nb\subseteq N$ $\forall a,b\in R$}{49}{subsubsection.9.2.2}%
-\contentsline {subsubsection}{\numberline {9.2.3}Thm: $N$ is ideal $\Rightarrow $ $R/N$ is a ring}{49}{subsubsection.9.2.3}%
-\contentsline {subsubsection}{\numberline {9.2.4}Fundamental Homomorphism Theorem}{49}{subsubsection.9.2.4}%
-\contentsline {subsubsection}{\numberline {9.2.5}Thm: $I,J\subset R$ be $R-ideals$ and $I+J=R$ $\Rightarrow R/_{I\cap J} \cong R/_I\times R/_J$}{50}{subsubsection.9.2.5}%
-\contentsline {section}{\numberline {10}Prime and Maximal Ideals}{50}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Thm: $N$ is $R$-ideal has a unit $\Rightarrow $ $N=R$}{50}{subsection.10.1}%
-\contentsline {subsubsection}{\numberline {10.1.1}Cor: Ideal of field $F$ is $\{0\}$ or $F$}{50}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.4}Thm: one-to-one map $\Leftrightarrow $ $Ker(\phi )=\{0\}$}{50}{subsubsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.2}Factor(Quotient) Rings}{50}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Thm: $R/H$ is a ring for $H=ker\phi $ if operations well defined}{50}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Thm: $(a+H)+(b+H)=(a+b)+H$ well defined $\Leftrightarrow $ $ah\in H,hb\in H,\forall a,b\in R,b\in H$}{50}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}Def: $N< R$ is ideal $aN\subseteq N$ and $Nb\subseteq N$ $\forall a,b\in R$}{50}{subsubsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.4}Thm: $N$ is ideal $\Rightarrow $ $R/N$ is a ring}{50}{subsubsection.9.2.4}%
+\contentsline {subsubsection}{\numberline {9.2.5}Fundamental Homomorphism Theorem}{50}{subsubsection.9.2.5}%
+\contentsline {subsubsection}{\numberline {9.2.6}Thm: $I,J\subset R$ be $R-ideals$ and $I+J=R$ $\Rightarrow R/_{I\cap J} \cong R/_I\times R/_J$}{50}{subsubsection.9.2.6}%
+\contentsline {section}{\numberline {10}Prime and Maximal Ideals}{51}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Thm: $N$ is $R$-ideal has a unit $\Rightarrow $ $N=R$}{51}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Cor: Ideal of field $F$ is $\{0\}$ or $F$}{51}{subsubsection.10.1.1}%
 \contentsline {subsection}{\numberline {10.2}Def: Maximal ideal: no other ideal properly contains it}{51}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Thm: $R$ comm ring with $1$, $M$ maximal ideal $\Leftrightarrow $ $R/M$ is a field}{51}{subsubsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.3}Def: Prime ideal: $ab\in P \Rightarrow $ $a\in P$ or $b\in P$}{51}{subsection.10.3}%
-\contentsline {subsubsection}{\numberline {10.3.1}Thm: $N$ prime ideal $\Leftrightarrow $ $R/N$ is an integral domain}{51}{subsubsection.10.3.1}%
-\contentsline {subsubsection}{\numberline {10.3.2}Cor: maximal ideal $\Rightarrow $ prime ideal}{51}{subsubsection.10.3.2}%
-\contentsline {subsection}{\numberline {10.4}Relation Summary}{51}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Thm: homomorphism $\phi :\mathbb {Z} \rightarrow R$, $\phi (n)=n\cdot 1$}{51}{subsection.10.5}%
-\contentsline {subsubsection}{\numberline {10.5.1}Cor: Ring $R$ 1. characteristic $n > 1$ $\Rightarrow $ has subring isomorphic to $\mathbb {Z}_n$ 2. characteristic $0$ $\Rightarrow $ has subring isomorphic to $\mathbb {Z}$}{52}{subsubsection.10.5.1}%
-\contentsline {subsubsection}{\numberline {10.5.2}Thm: Field $F$ 1. prime characteristic $p$ $\Rightarrow $ has subfield isomorphic to $\mathbb {Z}_p$ 2. characteristic $0$ $\Rightarrow $ has subfield isomorphic to $\mathbb {Q}$}{52}{subsubsection.10.5.2}%
-\contentsline {subsection}{\numberline {10.6}Def: Pricipal ideal (of comm ring $R$) generated by $a$: $\left \langle a\right \rangle =\{ra|r\in R\}$}{52}{subsection.10.6}%
-\contentsline {subsubsection}{\numberline {10.6.1}Thm: field $F$, every ideal in $F[x]$ is principal}{52}{subsubsection.10.6.1}%
-\contentsline {section}{\numberline {11}The Field of Quotients of an Integral Domain}{52}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Step 1. Define what the elements of $F$ are to be. (Define $S/\sim $)}{52}{subsection.11.1}%
-\contentsline {subsubsection}{\numberline {11.1.1}Def: equivalent relation $(a,b)\sim (c,d) \Leftrightarrow ad = bc$}{52}{subsubsection.11.1.1}%
-\contentsline {subsection}{\numberline {11.2}Step 2. Define the binary operations of addition and multiplication on $S/\sim $.}{52}{subsection.11.2}%
-\contentsline {subsubsection}{\numberline {11.2.1}lemma: well-defined operations $+,\times $}{53}{subsubsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.3}Step 3. Check all the field axioms to show that F is a field under these operations.}{53}{subsection.11.3}%
-\contentsline {subsubsection}{\numberline {11.3.1}Thm: $S/\sim $ is a field with $+,\times $}{53}{subsubsection.11.3.1}%
-\contentsline {subsection}{\numberline {11.4}Step 4. Show that F can be viewed as containing D as an integral subdomain.}{53}{subsection.11.4}%
-\contentsline {subsubsection}{\numberline {11.4.1}Lem: $\phi (a)=[(a,1)]$ is an isomorphism between $D$ and $\{[(a,1)]|a\in D\}$}{53}{subsubsection.11.4.1}%
-\contentsline {subsubsection}{\numberline {11.4.2}Thm: every element of $F$ can be expressed as a quotient of two elements of $D$: $[(a,b)]=\frac {\phi (a)}{\phi (b)}$}{54}{subsubsection.11.4.2}%
-\contentsline {section}{\numberline {12}Polynomials}{54}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Def: Polynomials}{54}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Rings of Polynomials}{54}{subsection.12.2}%
-\contentsline {subsubsection}{\numberline {12.2.1}Thm: $R[x]$ is a ring under addition and multiplication}{54}{subsubsection.12.2.1}%
-\contentsline {subsubsection}{\numberline {12.2.2}Def: evaluation homomorphism}{54}{subsubsection.12.2.2}%
-\contentsline {subsubsection}{\numberline {12.2.3}Def: $\alpha $ is zero if $EV_{x=\alpha }(f(x))=0$}{55}{subsubsection.12.2.3}%
-\contentsline {subsection}{\numberline {12.3}Degree of a Polynomial: $deg(f)$}{55}{subsection.12.3}%
-\contentsline {subsubsection}{\numberline {12.3.1}Lemma 2.3.3: $deg(fg)=deg(f)+deg(g) ,\ deg(f+g)\leq \qopname \relax m{max}\{deg(f),deg(g)\}$}{55}{subsubsection.12.3.1}%
-\contentsline {subsection}{\numberline {12.4}Corollary 2.3.5: Unit(invertible) in $\mathbb {F}[x]$: constant$\neq 0$ iff $deg(f)=0$}{55}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}\underline {Irreducible} Polynomials:}{56}{subsection.12.5}%
-\contentsline {subsection}{\numberline {12.6}Theorem 2.3.6: nonconstant polynomials can be reduced uniquely}{56}{subsection.12.6}%
-\contentsline {subsection}{\numberline {12.7}Divisibility of Polynomials}{56}{subsection.12.7}%
-\contentsline {subsubsection}{\numberline {12.7.1}Greatest common divisor of $f$ and $g$: is not unique, we denote monic Greatest common divisor as $gcd(f,g)$}{56}{subsubsection.12.7.1}%
-\contentsline {subsubsection}{\numberline {12.7.2}Proposition 2.3.9: Euclidean Algorithm of polynomials}{57}{subsubsection.12.7.2}%
-\contentsline {subsubsection}{\numberline {12.7.3}Proposition 2.3.10:}{57}{subsubsection.12.7.3}%
-\contentsline {subsubsection}{\numberline {12.7.4}Proposition 2.3.12: $gcd(f,g)=1, f|gh\Rightarrow f|h$}{57}{subsubsection.12.7.4}%
-\contentsline {subsubsection}{\numberline {12.7.5}Corollary 2.3.13: irreducible $f$, $f|gh$ $\Rightarrow f|g$ or $f|h$}{58}{subsubsection.12.7.5}%
-\contentsline {subsection}{\numberline {12.8}Roots}{58}{subsection.12.8}%
-\contentsline {subsubsection}{\numberline {12.8.1}Corollary 2.3.16(of Euclidean Algorithm): $f$ can be divided into $(x-\alpha )q+f(\alpha )$i.e. if $\alpha $ is a root, then $(x-\alpha )|f$}{58}{subsubsection.12.8.1}%
-\contentsline {subsection}{\numberline {12.9}Multiplicity}{58}{subsection.12.9}%
-\contentsline {subsubsection}{\numberline {12.9.1}$\textit {Sum of multiplicity}\leq deg(f)$}{58}{subsubsection.12.9.1}%
-\contentsline {subsection}{\numberline {12.10}Roots in a filed may not in its subfield}{58}{subsection.12.10}%
-\contentsline {section}{\numberline {13}Linear Algebra}{58}{section.13}%
-\contentsline {subsection}{\numberline {13.1} Vector Space $(V,+,\times )$ (over a field $\mathbb {F}$)}{58}{subsection.13.1}%
-\contentsline {subsubsection}{\numberline {13.1.1}A field is a vector space over its subfield}{59}{subsubsection.13.1.1}%
-\contentsline {subsubsection}{\numberline {13.1.2} Vector subspace}{59}{subsubsection.13.1.2}%
-\contentsline {subsection}{\numberline {13.2}Linear independent, Linear combination}{59}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}span V, basis, dimension, Proposition 2.4.10}{59}{subsection.13.3}%
-\contentsline {subsubsection}{\numberline {13.3.1}Standard basis vectors}{59}{subsubsection.13.3.1}%
-\contentsline {subsection}{\numberline {13.4}Linear transformation}{59}{subsection.13.4}%
-\contentsline {subsubsection}{\numberline {13.4.1}Corollary 2.4.16: \textit {bijection} $\mathcal {L} (V,M)\rightarrow M_{m\times n}(\mathbb {F})$}{60}{subsubsection.13.4.1}%
-\contentsline {subsubsection}{\numberline {13.4.2}Proposition 2.4.19: }{60}{subsubsection.13.4.2}%
-\contentsline {subsection}{\numberline {13.5}GL(V): invertible(bijective) linear transformations $V \rightarrow V$}{60}{subsection.13.5}%
-\contentsline {section}{\numberline {14}Euclidean geometry basics}{60}{section.14}%
-\contentsline {subsection}{\numberline {14.1} Euclidean distance, inner product}{60}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Isometry of $\mathbb {R}^n$: a bijection $\mathbb {R}^n \rightarrow \mathbb {R}^n$ preserves distance}{60}{subsection.14.2}%
-\contentsline {subsubsection}{\numberline {14.2.1}$Isom(\mathbb {R}^n)$: set of all isometries of $\mathbb {R}^n$}{60}{subsubsection.14.2.1}%
-\contentsline {subsubsection}{\numberline {14.2.2}$Isom(\mathbb {R}^n)$ is closed under $\circ $ and inverse}{61}{subsubsection.14.2.2}%
-\contentsline {subsection}{\numberline {14.3}$A\in GL(n,\mathbb {R})$, $T_A(v)=Av$: $A^tA=I \Leftrightarrow T_A\in Isom(\mathbb {R}^n)$}{61}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4} Linear isometries i.e. orthogonal group $O(n)=\{A\in GL(n,\mathbb {R})|A^tA=I \}$}{61}{subsection.14.4}%
-\contentsline {subsubsection}{\numberline {14.4.1}Special orthogonal group $SO(n)=\{A\in O(n) | det(A)=1\}$: orthogonal group with $det(A)=1$}{61}{subsubsection.14.4.1}%
-\contentsline {subsection}{\numberline {14.5}translation: $\tau _v(x)=x+v$}{61}{subsection.14.5}%
-\contentsline {subsubsection}{\numberline {14.5.1}translation is an isometry}{61}{subsubsection.14.5.1}%
-\contentsline {subsection}{\numberline {14.6}The composition of a translation and an orthogonal transformation is an isometry $\Phi _{A,v}(x)=\tau _v(T_A(x))=Ax+v$}{61}{subsection.14.6}%
-\contentsline {subsubsection}{\numberline {14.6.1}Theorem 2.5.3: All isometries can be represented by a composition of \textit {a translation} and \textit {an orthogonal transformation}, $Isom(\mathbb {R}^n)=\{\Phi _{A,v}|A\in O(n), v\in \mathbb {R}^n \}$}{62}{subsubsection.14.6.1}%
-\contentsline {section}{\numberline {15}Complex numbers}{62}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Geometric Meaning of Addition and Multiplication}{62}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2}Theorem 2.1.1: $f(x)=a_0+a_1x+...+a_nx^n$ with coefficients $a_0,a_1,...,a_n\in \mathbb {C}$. Then $f$ has a \underline {root} in $\mathbb {C}$: $\exists \alpha \in \mathbb {C}$ s.t. $f(\alpha )=0$}{63}{subsection.15.2}%
-\contentsline {subsubsection}{\numberline {15.2.1}Corollary 2.1.2: $f(x)=a_n\DOTSB \prod@ \slimits@ _{i=1}^n(x-k_i)=a_n(x-k_1)(x-k_2)...(x-k_n)$, where $k_1,k_2,...,k_n$ are roots of $f(x)$}{63}{subsubsection.15.2.1}%
-\contentsline {subsubsection}{\numberline {15.2.2}Corollary 2.1.3: $a_i\in \mathbb {R}$, $f$ can be expresses as a product of linear and quadratic polynomials}{63}{subsubsection.15.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Thm: $R$ comm ring with $1$, $M$ maximal ideal $\Leftrightarrow $ $R/M$ is a field}{52}{subsubsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.3}Def: Prime ideal: $ab\in P \Rightarrow $ $a\in P$ or $b\in P$}{52}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Thm: $N$ prime ideal $\Leftrightarrow $ $R/N$ is an integral domain}{52}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Cor: maximal ideal $\Rightarrow $ prime ideal}{52}{subsubsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.4}Relation Summary}{52}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Thm: homomorphism $\phi :\mathbb {Z} \rightarrow R$, $\phi (n)=n\cdot 1$}{52}{subsection.10.5}%
+\contentsline {subsubsection}{\numberline {10.5.1}Cor: Ring $R$ 1. characteristic $n > 1$ $\Rightarrow $ has subring isomorphic to $\mathbb {Z}_n$ 2. characteristic $0$ $\Rightarrow $ has subring isomorphic to $\mathbb {Z}$}{53}{subsubsection.10.5.1}%
+\contentsline {subsubsection}{\numberline {10.5.2}Thm: Field $F$ 1. prime characteristic $p$ $\Rightarrow $ has subfield isomorphic to $\mathbb {Z}_p$ 2. characteristic $0$ $\Rightarrow $ has subfield isomorphic to $\mathbb {Q}$}{53}{subsubsection.10.5.2}%
+\contentsline {subsection}{\numberline {10.6}Def: Pricipal ideal (of comm ring $R$) generated by $a$: $\left \langle a\right \rangle =\{ra|r\in R\}$}{53}{subsection.10.6}%
+\contentsline {subsubsection}{\numberline {10.6.1}Thm: field $F$, every ideal in $F[x]$ is principal}{53}{subsubsection.10.6.1}%
+\contentsline {subsubsection}{\numberline {10.6.2}Thm: principal ideal $\left \langle p(x)\right \rangle \neq \{0\}$ of $F[x]$ is maximal $\Leftrightarrow $ $p(x)$ is irreducible}{53}{subsubsection.10.6.2}%
+\contentsline {section}{\numberline {11}The Field of Quotients of an Integral Domain}{54}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Step 1. Define what the elements of $F$ are to be. (Define $S/\sim $)}{54}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Def: equivalent relation $(a,b)\sim (c,d) \Leftrightarrow ad = bc$}{54}{subsubsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.2}Step 2. Define the binary operations of addition and multiplication on $S/\sim $.}{54}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}lemma: well-defined operations $+,\times $}{54}{subsubsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.3}Step 3. Check all the field axioms to show that F is a field under these operations.}{55}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Thm: $S/\sim $ is a field with $+,\times $}{55}{subsubsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.4}Step 4. Show that F can be viewed as containing D as an integral subdomain.}{55}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Lem: $\phi (a)=[(a,1)]$ is an isomorphism between $D$ and $\{[(a,1)]|a\in D\}$}{55}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Thm: every element of $F$ can be expressed as a quotient of two elements of $D$: $[(a,b)]=\frac {\phi (a)}{\phi (b)}$}{55}{subsubsection.11.4.2}%
+\contentsline {section}{\numberline {12}Polynomials}{56}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Def: Polynomials}{56}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Rings of Polynomials}{56}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Thm: $R[x]$ is a ring under addition and multiplication}{56}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Def: evaluation homomorphism}{56}{subsubsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.3}Def: $\alpha $ is zero if $EV_{x=\alpha }(f(x))=0$}{57}{subsubsection.12.2.3}%
+\contentsline {subsection}{\numberline {12.3}Degree of a Polynomial: $deg(f)$}{57}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}Lemma 2.3.3: $deg(fg)=deg(f)+deg(g) ,\ deg(f+g)\leq \qopname \relax m{max}\{deg(f),deg(g)\}$}{57}{subsubsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.4}Corollary 2.3.5: Unit(invertible) in $\mathbb {F}[x]$: constant$\neq 0$ iff $deg(f)=0$}{57}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}\underline {Irreducible} Polynomials:}{57}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Theorem 2.3.6: nonconstant polynomials can be reduced uniquely}{58}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Divisibility of Polynomials}{58}{subsection.12.7}%
+\contentsline {subsubsection}{\numberline {12.7.1}Greatest common divisor of $f$ and $g$: is not unique, we denote monic Greatest common divisor as $gcd(f,g)$}{58}{subsubsection.12.7.1}%
+\contentsline {subsubsection}{\numberline {12.7.2}Proposition 2.3.9: Euclidean Algorithm of polynomials}{59}{subsubsection.12.7.2}%
+\contentsline {subsubsection}{\numberline {12.7.3}Proposition 2.3.10:}{59}{subsubsection.12.7.3}%
+\contentsline {subsubsection}{\numberline {12.7.4}Proposition 2.3.12: $gcd(f,g)=1, f|gh\Rightarrow f|h$}{59}{subsubsection.12.7.4}%
+\contentsline {subsubsection}{\numberline {12.7.5}Corollary 2.3.13: irreducible $f$, $f|gh$ $\Rightarrow f|g$ or $f|h$}{59}{subsubsection.12.7.5}%
+\contentsline {subsection}{\numberline {12.8}Roots}{60}{subsection.12.8}%
+\contentsline {subsubsection}{\numberline {12.8.1}Corollary 2.3.16(of Euclidean Algorithm): $f$ can be divided into $(x-\alpha )q+f(\alpha )$i.e. if $\alpha $ is a root, then $(x-\alpha )|f$}{60}{subsubsection.12.8.1}%
+\contentsline {subsection}{\numberline {12.9}Multiplicity}{60}{subsection.12.9}%
+\contentsline {subsubsection}{\numberline {12.9.1}$\textit {Sum of multiplicity}\leq deg(f)$}{60}{subsubsection.12.9.1}%
+\contentsline {subsection}{\numberline {12.10}Roots in a filed may not in its subfield}{60}{subsection.12.10}%
+\contentsline {section}{\numberline {13}Linear Algebra}{60}{section.13}%
+\contentsline {subsection}{\numberline {13.1} Vector Space $(V,+,\times )$ (over a field $\mathbb {F}$)}{60}{subsection.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.1}A field is a vector space over its subfield}{60}{subsubsection.13.1.1}%
+\contentsline {subsubsection}{\numberline {13.1.2} Vector subspace}{60}{subsubsection.13.1.2}%
+\contentsline {subsection}{\numberline {13.2}Linear independent, Linear combination}{61}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}span V, basis, dimension, Proposition 2.4.10}{61}{subsection.13.3}%
+\contentsline {subsubsection}{\numberline {13.3.1}Standard basis vectors}{61}{subsubsection.13.3.1}%
+\contentsline {subsection}{\numberline {13.4}Linear transformation}{61}{subsection.13.4}%
+\contentsline {subsubsection}{\numberline {13.4.1}Corollary 2.4.16: \textit {bijection} $\mathcal {L} (V,M)\rightarrow M_{m\times n}(\mathbb {F})$}{61}{subsubsection.13.4.1}%
+\contentsline {subsubsection}{\numberline {13.4.2}Proposition 2.4.19: }{62}{subsubsection.13.4.2}%
+\contentsline {subsection}{\numberline {13.5}GL(V): invertible(bijective) linear transformations $V \rightarrow V$}{62}{subsection.13.5}%
+\contentsline {section}{\numberline {14}Euclidean geometry basics}{62}{section.14}%
+\contentsline {subsection}{\numberline {14.1} Euclidean distance, inner product}{62}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Isometry of $\mathbb {R}^n$: a bijection $\mathbb {R}^n \rightarrow \mathbb {R}^n$ preserves distance}{62}{subsection.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.1}$Isom(\mathbb {R}^n)$: set of all isometries of $\mathbb {R}^n$}{62}{subsubsection.14.2.1}%
+\contentsline {subsubsection}{\numberline {14.2.2}$Isom(\mathbb {R}^n)$ is closed under $\circ $ and inverse}{62}{subsubsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.3}$A\in GL(n,\mathbb {R})$, $T_A(v)=Av$: $A^tA=I \Leftrightarrow T_A\in Isom(\mathbb {R}^n)$}{63}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4} Linear isometries i.e. orthogonal group $O(n)=\{A\in GL(n,\mathbb {R})|A^tA=I \}$}{63}{subsection.14.4}%
+\contentsline {subsubsection}{\numberline {14.4.1}Special orthogonal group $SO(n)=\{A\in O(n) | det(A)=1\}$: orthogonal group with $det(A)=1$}{63}{subsubsection.14.4.1}%
+\contentsline {subsection}{\numberline {14.5}translation: $\tau _v(x)=x+v$}{63}{subsection.14.5}%
+\contentsline {subsubsection}{\numberline {14.5.1}translation is an isometry}{63}{subsubsection.14.5.1}%
+\contentsline {subsection}{\numberline {14.6}The composition of a translation and an orthogonal transformation is an isometry $\Phi _{A,v}(x)=\tau _v(T_A(x))=Ax+v$}{63}{subsection.14.6}%
+\contentsline {subsubsection}{\numberline {14.6.1}Theorem 2.5.3: All isometries can be represented by a composition of \textit {a translation} and \textit {an orthogonal transformation}, $Isom(\mathbb {R}^n)=\{\Phi _{A,v}|A\in O(n), v\in \mathbb {R}^n \}$}{63}{subsubsection.14.6.1}%
+\contentsline {section}{\numberline {15}Complex numbers}{64}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Geometric Meaning of Addition and Multiplication}{64}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Theorem 2.1.1: $f(x)=a_0+a_1x+...+a_nx^n$ with coefficients $a_0,a_1,...,a_n\in \mathbb {C}$. Then $f$ has a \underline {root} in $\mathbb {C}$: $\exists \alpha \in \mathbb {C}$ s.t. $f(\alpha )=0$}{65}{subsection.15.2}%
+\contentsline {subsubsection}{\numberline {15.2.1}Corollary 2.1.2: $f(x)=a_n\DOTSB \prod@ \slimits@ _{i=1}^n(x-k_i)=a_n(x-k_1)(x-k_2)...(x-k_n)$, where $k_1,k_2,...,k_n$ are roots of $f(x)$}{65}{subsubsection.15.2.1}%
+\contentsline {subsubsection}{\numberline {15.2.2}Corollary 2.1.3: $a_i\in \mathbb {R}$, $f$ can be expresses as a product of linear and quadratic polynomials}{65}{subsubsection.15.2.2}%
